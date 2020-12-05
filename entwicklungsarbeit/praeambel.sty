@@ -1,0 +1,53 @@
+%%% Präambel
+
+\usepackage[top=2.54cm, bottom=2.54cm, left=2.54cm, right=2.54cm]{geometry}
+\usepackage[ngerman,english]{babel}
+\usepackage{times}
+\usepackage[tuenc,no-math]{fontspec}
+\setsansfont{texgyreheros}[
+  Scale=MatchLowercase,% or MatchUppercase
+  Extension=.otf,
+  UprightFont=*-regular,
+  ItalicFont=*-italic,
+  BoldFont=*-bold,
+  BoldItalicFont=*-bolditalic,
+]
+\usepackage{listings}
+\usepackage{graphicx}
+\usepackage{aeguill}
+
+\setcounter{secnumdepth}{4}
+\setcounter{tocdepth}{4}
+
+% Literatur mittels des Latex-Pakets Biber
+\usepackage[backend=biber,bibencoding=utf-8]{biblatex}
+\addbibresource{bibliographie.bib}
+
+% Hyperref wird mit der Option pdfencoding=auto importiert. Die Option
+% sorgt für einwandfreie Umlaute im Inhaltsverzeichnis.
+\usepackage[pdfencoding=auto,hidelinks]{hyperref}
+\hypersetup{bookmarksnumbered}
+
+% Physikalische Einheiten
+\usepackage{siunitx}
+\sisetup{output-decimal-marker={,},detect-all}
+
+% Schaltpläne nach europäischen Richtlinien
+\usepackage[european]{circuitikz}
+\tikzset{x=1mm,y=1mm}
+
+%Java code
+\usepackage{courier} %% Sets font for listing as Courier.
+\usepackage{listings, xcolor}
+\lstset{
+	tabsize = 2, %% set tab space width
+	showstringspaces = false, %% prevent space marking in strings, string is defined as the text that is generally printed directly to the console
+	numbers = left, %% display line numbers on the left
+	commentstyle = \color{gray}, %% set comment color
+	keywordstyle = \color{blue}, %% set keyword color
+	stringstyle = \color{red}, %% set string color
+	rulecolor = \color{black}, %% set frame color to avoid being affected by text color
+	basicstyle = \small \ttfamily , %% set listing font and size
+	breaklines = true, %% enable line breaking
+	numberstyle = \tiny,
+}
