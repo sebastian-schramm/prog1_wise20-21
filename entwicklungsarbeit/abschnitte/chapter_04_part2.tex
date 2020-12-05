@@ -1,0 +1,59 @@
+\subsection{Teilaufgabe 2}
+\subsubsection{Aufgabenstellung}
+Wir sollen ein Programm schreiben welches welches 2 nxn Matrizen miteinander Addieren und Multiplizieren kann.
+
+\subsubsection{Anforderungsdefinition}
+\begin{enumerate}
+	\item Addiere zwei nxn Matrizen.
+	\item Multipliziere zwei nxn Matrizen.
+\end{enumerate}
+
+\subsubsection{Entwurf}
+
+\subsubsection{Quellcode}
+\paragraph{Matrizen.java}\
+\lstinputlisting[language = Java , frame = trBL , escapeinside={(*@}{@*)}]{../chapter_04/src/chapter_04/Matrizen.java}
+
+\subsubsection{Testdokumentation}
+
+\subsubsection{Benutzungshinweise}
+Navigieren Sie in der Kommandozeile zum dem Ordner, wo sich die Java Datei befindet.
+Danach führen sie "javac Matrizen.java\dq \space auf. Jetzt können Sie das Programm mit
+"java Matrizen\dq \space starten. Nach dem das Programm gestartet ist, können Sie die
+grö\ss e der Matrix angeben.
+
+\subsubsection{Anwendungsbeispiel}
+Nach dem Aufruf von java Matrizen, sollten wir nun folgendes sehen:
+\begin{lstlisting}[frame = trBL , escapeinside={(*@}{@*)}]
+[sebastian@laptop bin]$ java Matrizen 
+Dieses Programm berechnet eine zufällig erstellte nxn Matrix
+Geben sie n an: 5
+Matrix A:
+22	54	23	36	35	
+49	98	67	82	23	
+78	62	36	60	2	
+54	2	74	48	95	
+58	2	86	3	75	
+
+Matrix B:
+84	7	63	44	84	
+69	55	76	83	97	
+60	98	66	41	4	
+27	6	71	96	24	
+40	8	21	66	38	
+
+Addition von A und B:
+106	61	86	80	119	
+118	153	143	165	120	
+138	160	102	101	6	
+81	8	145	144	119	
+98	10	107	69	113	
+
+Multiplikation von A und B:
+9326	5874	10299	12159	9372	
+18032	12975	21262	22427	16732	
+14690	7860	16304	15946	14226	
+14210	8788	13841	16454	9788	
+13251	9562	11270	11482	8332
+[sebastian@laptop bin]$  
+\end{lstlisting}
