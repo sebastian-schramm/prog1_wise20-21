@@ -1,0 +1,34 @@
+\section{Kapitel 1}
+\subsection{Aufgabenstellung}
+Wir sollen ein Programm schreiben welches den Text "Dear Prudence\dq \space in der Konsole ausgibt. 
+Um uns mit Java vertraut zu machen, sollten wir das erste Programm in der Kommandozeile schreiben.
+Anschlie\ss end mit Javac Kompilieren und mit Java ausführen. Danach öffnen wir unsere IDE, erstellen
+ein neues Projekt und schreib das selbe Programm diesmal in der IDE.
+
+\subsection{Anforderungsdefinition}
+\begin{enumerate}
+	\item Das Programm soll "Dear Prudence\dq \space auf der Konsole ausgeben.
+\end{enumerate}
+
+\subsection{Entwurf}
+\input{uml/chapter_01_part2.tex}
+
+\subsection{Quellcode}
+\subsubsection{Main.java}
+\lstinputlisting[language = Java , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]{../chapter_01/src/chapter_01/Main.java}
+
+\subsection{Testdokumentation}
+?
+
+\subsection{Benutzungshinweise}
+Navigieren Sie in der Kommandozeile zum dem Ordner, wo sich die Java Datei befindet.
+Danach führen sie "javac Main.java\dq \space auf. Jetzt können Sie das Programm mit "java main\dq \space
+ starten. In der Konsole sollte nun "Dear Prudence\dq \space angeziegt werden.
+
+\subsection{Anwendungsbeispiel}
+Nach dem Aufruf von java Main, sollten wir folgendes sehen:
+\begin{lstlisting}[frame = trBL , escapeinside={(*@}{@*)}]
+[sebastian@laptop bin]$ java Main 
+Dear Prudence
+[sebastian@laptop bin]$ 
+\end{lstlisting}

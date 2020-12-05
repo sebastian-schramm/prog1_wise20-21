@@ -1,0 +1,5 @@
+@startuml
+start
+:print "Dear Prudence";
+stop
+@enduml
