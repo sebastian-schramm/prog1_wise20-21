@@ -1,7 +1,7 @@
 #eclipse
 .metadata
-./**/.settings
-./**/.gitignore
+/*/.settings
+/*/.gitignore
 
 #latex
 *.bcf
