@@ -1,6 +1,5 @@
 package chapter_04;
 
-import java.util.Scanner;
 /**
  * Classe mit der Main-Methode
  * Addiert und Multipliziert Matrizen
@@ -13,19 +12,13 @@ public class Matrizen {
 		int matrixA[][];
 		int matrixB[][];
 		
-		//Hier können sie die Größe definieren, z.B. 2,3 oder 5
-		System.out.println("Dieses Programm berechnet eine zufällig erstellte nxn Matrix");
-		System.out.print("Geben sie n an: ");
-		Scanner sc = new Scanner(System.in);
-		int n = sc.nextInt();
-		
 		/*
 		 * Inizialisierungsmethode wird mit dem Wert n aufgerufen.
 		 * Anschließend wird diese Matrix erzeugt und mit 
 		 * zufällig generierten Zahlen befüllt.
 		 */
-		matrixA = initialize(n);
-		matrixB = initialize(n);
+		matrixA = initialize(2);
+		matrixB = initialize(2);
 
 		/*
 		 * Zuerst werden die Beiden Matrizen A und B jeweils ausgegeben
@@ -44,8 +37,6 @@ public class Matrizen {
 		 */
 		System.out.println("Multiplikation von A und B:");
 		printMatrix(multiplikation(matrixA, matrixB));
-		
-		sc.close();
 	}
 	
 	/**
