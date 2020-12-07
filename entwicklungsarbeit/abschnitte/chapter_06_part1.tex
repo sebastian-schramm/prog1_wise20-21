@@ -1,0 +1,76 @@
+\section{Kapitel 6}
+\subsection{Teilaufgabe 1}
+\subsubsection{Aufgabenstellung}
+Im grunde ist es die Selbe Aufgabe wie aus Kapitel 4, Teilaufgabe 2. Doch jetzt solle es auch
+für nxn Matrizen funktionieren. Die grö\ss\space gibt an ende der Nutzer ein. Zusätzlich soll
+noch die Multiplikation der Matrizen auch mit while und do-while gelöst werden.
+
+\subsubsection{Anforderungsdefinition}
+\begin{enumerate}
+	\item Unser input für die Grö\ss\space der nxn Matrix.
+	\item Multiplikation mit for, while, und do-while.
+\end{enumerate}
+
+\subsubsection{Entwurf}
+
+
+\subsubsection{Quelltext}
+\paragraph{Matrizen.java}\
+\lstinputlisting[language = Java , frame = trBL , escapeinside={(*@}{@*)}]{../chapter_06/src/chapter_06/Matrizen.java}
+
+\subsubsection{Testdokumentation}
+
+\subsubsection{Benutzungshinweise}
+Nach dem aufrufen des Programmes, wird der nutzer aufgefordert eine Zahl einzugeben.
+Diese muss grö\ss er als ein sein.
+
+\subsubsection{Anwendungsbeispiel}
+Nach dem man das Programm gestartet hat, sollte folgende Ausgabe erscheinen:
+\begin{lstlisting}[frame = trBL , escapeinside={(*@}{@*)}]
+[sebastian@laptop bin]$ java Matrizen 
+Dieses Programm berechnet eine zufällig erstellte nxn Matrix
+Geben sie n an: 5
+Matrix A:
+56	64	80	51	83	
+28	21	53	57	4	
+31	65	76	25	17	
+23	14	36	38	1	
+12	59	78	21	54	
+
+Matrix B:
+22	39	22	22	95	
+47	51	16	19	73	
+91	43	20	42	15	
+44	25	72	19	6	
+46	7	58	14	18	
+
+Addition von A und B:
+78	103	102	73	178	
+75	72	69	76	77	
+122	108	96	67	32	
+67	39	108	57	7	
+58	66	136	35	72	
+
+Multiplikation von A und B:
+For Schleife
+17582	10744	12342	7939	12992	
+9118	5895	6348	4380	5402	
+12535	8536	6028	5822	9286	
+6158	4116	4244	3020	3993	
+13543	7734	7412	5816	7715	
+
+While Schleife
+17582	10744	12342	7939	12992	
+9118	5895	6348	4380	5402	
+12535	8536	6028	5822	9286	
+6158	4116	4244	3020	3993	
+13543	7734	7412	5816	7715	
+
+Do-While Schleife
+17582	10744	12342	7939	12992	
+9118	5895	6348	4380	5402	
+12535	8536	6028	5822	9286	
+6158	4116	4244	3020	3993	
+13543	7734	7412	5816	7715	
+[sebastian@laptop bin]$ 
+\end{lstlisting}

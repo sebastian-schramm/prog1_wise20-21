@@ -1,0 +1,46 @@
+\section{Kapitel 6}
+\subsection{Teilaufgabe 2}
+\subsubsection{Aufgabenstellung}
+In der zweiten Teilaufgabe sollten wir Sprunganweisungen in Java Sinvoll verdeutlichen.
+
+\subsubsection{Anforderungsdefinition}
+\begin{enumerate}
+	\item Verwenden sie Sprunganweisungen.
+	\item Mindestens ein switch-Anweisung.
+\end{enumerate}
+
+\subsubsection{Entwurf}
+
+
+\subsubsection{Quelltext}
+\paragraph{Sprunganweisungen.java}\
+\lstinputlisting[language = Java , frame = trBL , escapeinside={(*@}{@*)}]{../chapter_06/src/chapter_06/Sprunganweisungen.java}
+
+\subsubsection{Testdokumentation}
+
+\subsubsection{Benutzungshinweise}
+Nach dem aufrufen des Programmes, wird der nutzer aufgefordert seine NutzerID anzugebe,j
+sowie anschlie\ss end sein Passwort. Bei inkorrekter eingaben, wird man erneut aufgeforder
+die Daten einzutippen.
+
+\subsubsection{Anwendungsbeispiel}
+Bei Erfolgreicher Anmeldung:
+\begin{lstlisting}[frame = trBL , escapeinside={(*@}{@*)}]
+[sebastian@laptop bin]$ java Sprunganweisungen 	
+Wilkommen...!
+ID      : 1
+Passwort: hallo
+Juhu, Sie haben sich eingeloggt
+[sebastian@laptop bin]$ 
+\end{lstlisting}
+Bei inkorrekter Anmeldung:
+\begin{lstlisting}[frame = trBL , escapeinside={(*@}{@*)}]
+[sebastian@laptop bin]$ java Sprunganweisungen 	
+Wilkommen...!
+ID      : 12
+Passwort: qwert
+Ihre Angaben sind leider falsch, versuchen Sie es erneut.
+Wilkommen...!
+ID      : 
+[sebastian@laptop bin]$ 
+\end{lstlisting}
