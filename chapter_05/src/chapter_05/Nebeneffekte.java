@@ -8,10 +8,12 @@ package chapter_05;
 public class Nebeneffekte {
 
 	public static void main(String[] args) {
-		int i = 2;
-		int k = --i+i;
-		int j = (i = 3) * (i+++--k);
-		System.out.println("Der Wert von j ist: " + j);
+		int x = 10;
+		int y = ++x+x;
+		int z = y+++--x;
+		System.out.println("Der Wert von x lautet: " + x);
+		System.out.println("Der Wert von y lautet: " + y);
+		System.out.println("Der Wert von z lautet: " + z);
 	}
 
 }
