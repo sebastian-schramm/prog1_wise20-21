@@ -19,6 +19,7 @@ public class Operatoren {
 	}
 	
 	private static void arithmetisch() {
+		System.out.println("Arithmeschie Operatoren:");
 		System.out.println("23 + 34 = " + (23 + 34));	// Addition
 		System.out.println("54 - 32 = " + (54 - 32));	// Subtraktion
 		System.out.println("12 * 30 = " + 12 * 30);		// Multiplikation
@@ -32,6 +33,7 @@ public class Operatoren {
 	
 	private static void inkrement() {
 		int x = 10;
+		System.out.println("\nInkrement Operatoren:");
 		System.out.println("x   = " + x);
 		System.out.println("x++ = " + x++);	//Postinkrement: Weist zuerst zu, dann hochzählen
 		System.out.println("x   = " + x);
@@ -44,6 +46,7 @@ public class Operatoren {
 	}
 	
 	private static void vergleiche() {
+		System.out.println("\nVergleichs Operatoren:");
 		System.out.println("37 == 2 = " + (37 == 2));	// gleich
 		System.out.println("1 != 2 = " + (1 != 2));		// ungleich
 		System.out.println("13 > 3 = " + (13 > 3));		// größer
@@ -54,6 +57,7 @@ public class Operatoren {
 	
 	@SuppressWarnings("unused")
 	private static void boolische() {
+		System.out.println("\nBoolische Operatoren:");
 		System.out.println("!true = "  + !true);					// Negation
 		System.out.println("true && true = "  + (true && true));	// Und, ture 2, genau dann wenn alle Argumente true sind
 		System.out.println("true || false = "  + (true || false));	// Oder, true, wenn mindestens ein Operand true ist
@@ -62,7 +66,7 @@ public class Operatoren {
 	
 	private static void bitshifting() {
 		int bit = 0b01000100;
-		System.out.println(Integer.toBinaryString(~bit));
+		System.out.println("\nBitweise Operatoren:");
 		System.out.println("0b10111011 = ~0b01000100"); //Invertiert die Bits
 		System.out.println("0b10101010 & 0b11111111 = " + Integer.toString(0b10101010 & 0b11111111, 2)); // Verundet die Bits
 		System.out.println("0b10101010 | 0b01101001 = " + Integer.toString(0b10101010 | 0b00101001, 2)); // Verodert die Bits
@@ -74,6 +78,7 @@ public class Operatoren {
 	
 	private static void zuweisung() {
 		int a = 20;
+		System.out.println("\nZuweisungs Operatoren:");
 		System.out.println("int a = 20"); 					// Einfache zuweisung
 		System.out.println("a += 10 => " + (a += 10)); 		// Addiert ein wert zu der Variable
 		System.out.println("a -= 20 => " + (a -= 20)); 		// Subtrahiert ein wert zu der Variable
