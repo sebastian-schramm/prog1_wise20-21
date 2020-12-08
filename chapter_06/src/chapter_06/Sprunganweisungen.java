@@ -9,7 +9,6 @@ import java.util.Scanner;
  */
 public class Sprunganweisungen {
 	private static int id;
-	private static String pw;
 
 	public static void main(String[] args) {
 		login();
@@ -75,9 +74,6 @@ public class Sprunganweisungen {
 		} while (id == 0);
 		
 		System.out.println("Juhu, Sie haben sich eingeloggt");
-//		sc.close();
+		sc.close();
 	}
-	
-	
-
 }

@@ -65,8 +65,9 @@ public class Operatoren {
 	}
 	
 	private static void bitshifting() {
-		int bit = 0b01000100;
+		int bit = ~0b10111011 & 0xff;
 		System.out.println("\nBitweise Operatoren:");
+		System.out.println("0b10111011 = ~0b" + Integer.toString(bit, 2)); //Invertiert die Bits
 		System.out.println("0b10111011 = ~0b01000100"); //Invertiert die Bits
 		System.out.println("0b10101010 & 0b11111111 = " + Integer.toString(0b10101010 & 0b11111111, 2)); // Verundet die Bits
 		System.out.println("0b10101010 | 0b01101001 = " + Integer.toString(0b10101010 | 0b00101001, 2)); // Verodert die Bits
