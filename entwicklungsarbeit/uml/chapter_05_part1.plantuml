@@ -1,0 +1,12 @@
+@startuml
+start
+:weise x 10 zu;
+:weise y ++x+x zu;
+:weise z y+++--x zu;
+
+:print x;
+:print y;
+:print z;
+
+stop
+@enduml

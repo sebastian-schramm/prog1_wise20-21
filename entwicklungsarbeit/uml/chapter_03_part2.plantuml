@@ -1,0 +1,11 @@
+@startuml
+start
+:print Byte min max;
+:print Short min max;
+:print Int min max;
+:print Long min max;
+:print Char min max;
+:print Double min max;
+:print Float min max;
+stop
+@enduml

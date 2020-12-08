@@ -1,0 +1,12 @@
+@startuml
+start
+:initialize MatrixA;
+:print MatrixA;
+:initialize MatrixB;
+:print MatrixB;
+:Addiere MatrixA und MatrixB;
+:print MatrixC;
+:Multipliziere MatrixA und MatrixB;
+:print MatrixC;
+stop
+@enduml

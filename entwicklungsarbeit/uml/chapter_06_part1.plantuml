@@ -1,0 +1,20 @@
+@startuml
+start
+:userinput n für die grö\ss\space der Matrix;
+:initialize MatrixA mit grö\ss\space n;
+:print MatrixA;
+:initialize MatrixB mit grö\ss\space n;
+:print MatrixB;
+:Addiere MatrixA und MatrixB;
+:print MatrixC;
+:Multipliziere MatrixA und MatrixB
+mit For Schleife;
+:print MatrixC;
+:Multipliziere MatrixA und MatrixB
+mit While Schleife;
+:print MatrixC;
+:Multipliziere MatrixA und MatrixB
+mit Do-While Schleife;
+:print MatrixC;
+stop
+@enduml

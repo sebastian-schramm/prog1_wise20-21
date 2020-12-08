@@ -1,0 +1,31 @@
+@startuml
+start
+:erzeuge neues objekt
+p1 mit den werten 10, 20;
+
+:erzeuge neues objekt
+p2 mit den werten 10, 20;
+
+:erzeuge neues objekt
+p3 und weise p1 zu;
+
+if (p1 == p2?) then (yes)
+  :print "Ist gleich";
+else (no)
+  :print "Ist ungleich";
+endif
+
+if (p1.equals(p2)?) then (yes)
+  :print "Ist gleich";
+else (no)
+  :print "Ist ungleich";
+endif
+
+if (p1 == p3?) then (yes)
+  :print "Ist gleich";
+else (no)
+  :print "Ist ungleich";
+endif
+
+stop
+@enduml
