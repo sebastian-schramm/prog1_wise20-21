@@ -3,6 +3,10 @@
 /*/.settings
 /*/.gitignore
 
+#intellij
+/*/.idea
+/*/*.iml
+
 #latex
 *.bcf
 *.log
