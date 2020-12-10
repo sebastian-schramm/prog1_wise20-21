@@ -1,7 +1,7 @@
 package chapter_04;
 
 /**
- * Classe mit der Main-Methode
+ * Klasse mit der Main-Methode
  * Addiert und Multipliziert Matrizen
  * @author Sebastian
  *
@@ -13,7 +13,7 @@ public class Matrizen {
 		int matrixB[][];
 		
 		/*
-		 * Inizialisierungsmethode wird mit dem Wert n aufgerufen.
+		 * Initialisierungsmethode wird mit dem Wert n aufgerufen.
 		 * Anschließend wird diese Matrix erzeugt und mit 
 		 * zufällig generierten Zahlen befüllt.
 		 */
@@ -41,13 +41,13 @@ public class Matrizen {
 	
 	/**
 	 * Initialisierung des Arrays
-	 * @param n
+	 * @param n Die größe der nxn Matrix
 	 * @return matrix
 	 */
 	private static int[][] initialize(int n) {
 		int matrix[][] = new int[n][n];
 		/*
-		 * Bei der Initialisierung wird einmal durch das gesammt Array duch itteriert.
+		 * Bei der Initialisierung wird einmal durch das gesamt Array dutch iteriert.
 		 * Dabei werden dann mit Math.random() zufällige Zahlen rein geschrieben.
 		 */
 		for (int i = 0; i < matrix.length; ++i)
@@ -61,7 +61,7 @@ public class Matrizen {
 	 * Addition der beiden Matrizen A und B
 	 * @param matrixA
 	 * @param matrixB
-	 * @return
+	 * @return Gibt ein neues Array mit den Addierten Werten zurück
 	 */
 	private static int[][] addition(int matrixA[][], int matrixB[][]) {
 		int matrixAd[][] = new int[matrixA.length][matrixA[0].length]; //Es wird ein neues Temporäres Array angelegt
@@ -79,7 +79,7 @@ public class Matrizen {
 	 * Multiplikation der beiden Matrizen A und B
 	 * @param matrixA
 	 * @param matrixB
-	 * @return
+	 * @return Gibt ein neues Array mit den Multiplizierten Werten zurück
 	 */
 	private static int[][] multiplikation(int matrixA[][], int matrixB[][]) {
 		int matrixMult[][] = new int[matrixB.length][matrixB[0].length];

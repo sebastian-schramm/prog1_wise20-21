@@ -13,18 +13,18 @@ public class Operatoren {
 		arithmetisch();
 		inkrement();
 		vergleiche();
-		boolische();
+		boolesche();
 		bitshifting();
 		zuweisung();
 	}
-	
+
 	private static void arithmetisch() {
-		System.out.println("Arithmeschie Operatoren:");
+		System.out.println("Arithmetische Operatoren:");
 		System.out.println("23 + 34 = " + (23 + 34));	// Addition
 		System.out.println("54 - 32 = " + (54 - 32));	// Subtraktion
 		System.out.println("12 * 30 = " + 12 * 30);		// Multiplikation
 		System.out.println("56 / 12 = " + 56 / 12);		// Division
-		System.out.println("74 % 2  = " + 74 % 2);		// Teilerrest, Modulo-Operation, errechnet den Rest einer Division
+		System.out.println("74 % 2  = " + 74 % 2);		// Teiler rest, Modulo-Operation, errechnet den Rest einer Division
 		int i;
 		System.out.println("int i = +3 = " + (i = +3));	// positives Vorzeichen
 		int n;
@@ -54,10 +54,9 @@ public class Operatoren {
 		System.out.println("23 >= 23 = " + (23 >= 23));	// größer oder gleich
 		System.out.println("45 <= 44 = " + (45 <= 44));	// kleiner oder gleich
 	}
-	
-	@SuppressWarnings("unused")
-	private static void boolische() {
-		System.out.println("\nBoolische Operatoren:");
+
+	private static void boolesche() {
+		System.out.println("\nBoolesche Operatoren:");
 		System.out.println("!true = "  + !true);					// Negation
 		System.out.println("true && true = "  + (true && true));	// Und, ture 2, genau dann wenn alle Argumente true sind
 		System.out.println("true || false = "  + (true || false));	// Oder, true, wenn mindestens ein Operand true ist
@@ -79,16 +78,16 @@ public class Operatoren {
 	
 	private static void zuweisung() {
 		int a = 20;
-		System.out.println("\nZuweisungs Operatoren:");
+		System.out.println("\nZuweisung Operatoren:");
 		System.out.println("int a = 20"); 					// Einfache zuweisung
 		System.out.println("a += 10 => " + (a += 10)); 		// Addiert ein wert zu der Variable
 		System.out.println("a -= 20 => " + (a -= 20)); 		// Subtrahiert ein wert zu der Variable
 		System.out.println("a *= 7 => " + (a *= 7)); 		// Dividiert die Variable durch den angegebenen Wert und weist ihn zu
 		System.out.println("a /= 5 => " + (a /= 5)); 		// Multipliziert die Variable durch den angegebenen Wert und weist ihn zu
 		System.out.println("a %= 5 => " + (a %= 5)); 		// Ermittelt den Rest und weist ihn zu
-		System.out.println("a &= 12 => " + (a &= 12)); 		// Eine bitweise verundung
-		System.out.println("a |= 10 => " + (a |= 10)); 		// Bitweise veroderung
-		System.out.println("a ^= 30 => " + (a ^= 30)); 		// Exklusives oder auf Bitebene
+		System.out.println("a &= 12 => " + (a &= 12)); 		// Eine bitweise Verundung
+		System.out.println("a |= 10 => " + (a |= 10)); 		// Bitweise Veroderung
+		System.out.println("a ^= 30 => " + (a ^= 30)); 		// Exklusives oder auf Bit ebene
 		System.out.println("a <<= 3 => " + (a <<= 3)); 		// Linksverschiebung
 		System.out.println("a >>= 1 => " + (a >>= 1)); 		// Rechtsverschiebung
 		System.out.println("a >>>= 2 => " + (a >>>= 2)); 	// Rechtsverschiebung und Auffüllen mit Nullen

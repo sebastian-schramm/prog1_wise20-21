@@ -39,14 +39,14 @@ public class Typkonvertierungen {
 		System.out.println("Short  " + newShort);
 		System.out.println("Int    " + newInt);
 		System.out.println("Long   " + newLong);
-		System.out.println("FLoat  " + newFloat);
-		System.out.println("Bouble " + newDouble);
+		System.out.println("Float  " + newFloat);
+		System.out.println("Double " + newDouble);
 		System.out.println("\nChar   " + (char) newInt); //Char wird hier separat ausgegeben
 		System.out.println("---------------------");
 	}
 	
 	/**
-	 * Eine einschraenkende Konvertierung von Short zu Byte
+	 * Eine einschränkende Konvertierung von Short zu Byte
 	 * Eine erweiternde Konvertierung von Short zu Double
 	 * @param _short
 	 */
@@ -57,7 +57,7 @@ public class Typkonvertierungen {
 		float newFloat = _short;
 		double newDouble = _short;
 		
-		System.out.println("Short einschraenkend");
+		System.out.println("Short einschränkend");
 		System.out.println("Short  " + _short);
 		System.out.println("Byte   " + newByte);
 
@@ -65,14 +65,14 @@ public class Typkonvertierungen {
 		System.out.println("Short  " + _short);
 		System.out.println("Int    " + newInt);
 		System.out.println("Long   " + newLong);
-		System.out.println("FLoat  " + newFloat);
-		System.out.println("Bouble " + newDouble);
+		System.out.println("Float  " + newFloat);
+		System.out.println("Double " + newDouble);
 		System.out.println("\nChar   " + (char) newInt); //Char wird hier separat ausgegeben
 		System.out.println("---------------------");
 	}
 	
 	/**
-	 * Eine einschraenkende Konvertierung von Int zu Byte
+	 * Eine einschränkende Konvertierung von Int zu Byte
 	 * Eine erweiternde Konvertierung von Int zu Double
 	 * @param _int
 	 */
@@ -84,7 +84,7 @@ public class Typkonvertierungen {
 		float newFloat = _int;
 		double newDouble = _int;
 		
-		System.out.println("Int einschraenkend");
+		System.out.println("Int einschränkend");
 		System.out.println("Int    " + _int);
 		System.out.println("Short  " + newShort);
 		System.out.println("Byte   " + newByte);
@@ -92,14 +92,14 @@ public class Typkonvertierungen {
 		System.out.println("Int erweiternd");
 		System.out.println("Int    " + _int);
 		System.out.println("Long   " + newLong);
-		System.out.println("FLoat  " + newFloat);
-		System.out.println("Bouble " + newDouble);
+		System.out.println("Float  " + newFloat);
+		System.out.println("Double " + newDouble);
 		System.out.println("\nChar   " + (char) _int); //Char wird hier separat ausgegeben
 		System.out.println("---------------------");
 	}
 	
 	/**
-	 * Eine einschraenkende Konvertierung von Long zu Byte
+	 * Eine einschränkende Konvertierung von Long zu Byte
 	 * Eine erweiternde Konvertierung von Long zu Double
 	 * @param _long
 	 */
@@ -111,7 +111,7 @@ public class Typkonvertierungen {
 		float newFloat = _long;
 		double newDouble = _long;
 		
-		System.out.println("Long einschraenkend");
+		System.out.println("Long einschränkend");
 		System.out.println("Long   " + _long);
 		System.out.println("Int    " + newInt);
 		System.out.println("Short  " + newShort);
@@ -119,14 +119,14 @@ public class Typkonvertierungen {
 
 		System.out.println("Long erweiternd");
 		System.out.println("Long   " + _long);
-		System.out.println("FLoat  " + newFloat);
-		System.out.println("Bouble " + newDouble);
+		System.out.println("Float  " + newFloat);
+		System.out.println("Double " + newDouble);
 		System.out.println("\nChar   " + (char) newInt); //Char wird hier separat ausgegeben
 		System.out.println("---------------------");
 	}
 	
 	/**
-	 * Eine einschraenkende Konvertierung von Char zu Byte
+	 * Eine einschränkende Konvertierung von Char zu Byte
 	 * Eine erweiternde Konvertierung von Char zu Double
 	 * @param _char
 	 */
@@ -139,7 +139,7 @@ public class Typkonvertierungen {
 		float newFloat = _char;
 		double newDouble = _char;
 		
-		System.out.println("Char einschraenkend");
+		System.out.println("Char einschränkend");
 		System.out.println("Char   " + _char);
 		System.out.println("Long   " + newLong);
 		System.out.println("Int    " + newInt);
@@ -149,14 +149,14 @@ public class Typkonvertierungen {
 		System.out.println("Char erweiternd");
 		System.out.println("Char   " + _char);
 		System.out.println("Long   " + newLong);
-		System.out.println("FLoat  " + newFloat);
-		System.out.println("Bouble " + newDouble);
+		System.out.println("Float  " + newFloat);
+		System.out.println("Double " + newDouble);
 		System.out.println("---------------------");
 	}
 	
 	/**
-	 * Eine einschraenkende Konvertierung von FLoat zu Byte
-	 * Eine erweiternde Konvertierung von FLoat zu Double
+	 * Eine einschränkende Konvertierung von Float zu Byte
+	 * Eine erweiternde Konvertierung von Float zu Double
 	 * @param _float
 	 */
 	private static void convertFloat(float _float) {
@@ -167,22 +167,22 @@ public class Typkonvertierungen {
 		
 		double newDouble = _float;
 		
-		System.out.println("Float einschraenkend");
-		System.out.println("FLoat  " + _float);
+		System.out.println("Float einschränkend");
+		System.out.println("Float  " + _float);
 		System.out.println("Long   " + newLong);
 		System.out.println("Int    " + newInt);
 		System.out.println("Short  " + newShort);
 		System.out.println("Byte   " + newByte);
 
 		System.out.println("Float erweiternd");
-		System.out.println("FLoat  " + _float);
-		System.out.println("Bouble " + newDouble);
+		System.out.println("Float  " + _float);
+		System.out.println("Double " + newDouble);
 		System.out.println("\nChar   " + (char) newInt); //Char wird hier separat ausgegeben
 		System.out.println("---------------------");
 	}
 	
 	/**
-	 * Eine einschraenkende Konvertierung von Double zu Byte
+	 * Eine einschränkende Konvertierung von Double zu Byte
 	 * @param _double
 	 */
 	private static void convertDouble(double _double) {
@@ -192,9 +192,9 @@ public class Typkonvertierungen {
 		short newShort = (short) _double;
 		byte newByte = (byte) _double;
 
-		System.out.println("Double einschraenkend");
-		System.out.println("Bouble " + _double);
-		System.out.println("FLoat  " + newFloat);
+		System.out.println("Double einschränkend");
+		System.out.println("Double " + _double);
+		System.out.println("Float  " + newFloat);
 		System.out.println("Long   " + newLong);
 		System.out.println("Int    " + newInt);
 		System.out.println("Short  " + newShort);

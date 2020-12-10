@@ -2,7 +2,7 @@ package chapter_03;
 
 /** 
  * Klasse mit der Main-Methode
- * und gibt die Wertebereiche der primitieven Datentypen aus
+ * und gibt die Wertebereiche der primitiven Datentypen aus
  * @author Sebastian
  */
 public class Wertebereiche {

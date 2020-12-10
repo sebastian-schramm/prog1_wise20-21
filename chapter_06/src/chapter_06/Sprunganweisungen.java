@@ -38,12 +38,12 @@ public class Sprunganweisungen {
 	}
 	
 	/**
-	 * Hier befinded sich das Login feld
+	 * Hier befindet sich das Login feld
 	 */
 	private static void login() {
 		Scanner sc = new Scanner(System.in);
 		do {
-			System.out.println("Wilkommen...!");
+			System.out.println("Willkommen...!");
 			System.out.print("ID      : ");
 			
 			/*

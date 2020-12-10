@@ -1,7 +1,7 @@
 package chapter_04;
 
 /**
- * Punkt Classe
+ * Punkt Klasse
  * Hier werden nur Zwei Punkte gespeichert
  * @author Sebastian
  *

@@ -1,7 +1,7 @@
 package chapter_04;
 
 /**
- * Classe mit der Main-Methode
+ * Klasse mit der Main-Methode
  * und prüft ob Zwei Referenzen gleich sind
  * @author Sebastian
  *
@@ -19,7 +19,7 @@ public class Referenzen {
 		Punkt p2 = new Punkt(10, 20);
 		Punkt p3 = p1;
 		
-		//Hier wird gerüft ob p1 und p2 die selbe Addresse hat.
+		//Hier wird geprüft ob p1 und p2 die selbe Adresse hat.
 		if (p1 == p2)
 			System.out.println("Ist gleich");
 		else
@@ -31,7 +31,7 @@ public class Referenzen {
 		else
 			System.out.println("Ist ungleich");
 		
-		//Hier wird geprüft ob p3 und p1 gelich sind
+		//Hier wird geprüft ob p3 und p1 gleich sind
 		if (p3 == p1)
 			System.out.println("Ist gleich");
 		else
