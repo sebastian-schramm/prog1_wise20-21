@@ -1,8 +1,8 @@
-package chapter_07.figures;
+package figures;
 
 import static java.lang.Math.PI;
 
-public class KonvexesViereck implements Viereck {
+public class KonvexesViereck extends Viereck {
     protected double a = 0;
     protected double b = 0;
     protected double c = 0;

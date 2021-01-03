@@ -1,4 +1,4 @@
-package chapter_07.figures;
+package figures;
 
 public class Rechteck extends Parallelogramm {
 
