@@ -1,0 +1,21 @@
+@startuml
+start
+:Initialisiere n mit 0;
+repeat :Gebe eine Zahl ein
+    if (Keine Zahl) then
+        :print Geben Sie eine Zahl ein;
+    elseif (Zahl kleiner 2) then
+        :print Zahl muss größer gleich Zwei sein;
+    endif
+    : n gleich Zahl;
+repeat while (Zahl größer 1)
+:Erstelle MatrixA mit zufälligen Werten;
+:Erstelle MatrixB mit zufälligen Werten;
+:Gebe MartixA aus;
+:Gebe MartixB aus;
+:Addiere MatrixA und MatrixB;
+:Gebe MatrixC aus;
+:Multipliziere MatrixA und MatrixB;
+:Gebe MatrixC aus;
+stop
+@enduml
