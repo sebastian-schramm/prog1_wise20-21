@@ -17,8 +17,21 @@ public class Matrizen {
 		System.out.println("Dieses Programm berechnet eine zufällig erstellte nxn Matrix");
 		System.out.print("Geben sie n an: ");
 		Scanner sc = new Scanner(System.in);
-		int n = sc.nextInt();
-		
+
+		//Prüft ob der Userinput eine Zahl ist und ob diese größer als Eins ist
+		int n = 0;
+		boolean isInt = false;
+		do {
+			isInt = sc.hasNextInt();
+			if (!isInt) {
+				System.out.println("Es dürfen nur Zahlen verwendet werden");
+				sc.next();
+			} else
+				n = sc.nextInt();
+
+			if (isInt && n < 2)
+				System.out.println("Die Zahl muss größer gleich 2 sein");
+		} while (n < 2);
 		/*
 		 * Initialisierungsmethode wird mit dem Wert n aufgerufen.
 		 * Anschließend wird diese Matrix erzeugt und mit 
