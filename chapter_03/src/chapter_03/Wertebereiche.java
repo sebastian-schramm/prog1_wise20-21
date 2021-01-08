@@ -18,8 +18,7 @@ public class Wertebereiche {
 		System.out.println("Long min " + Long.MIN_VALUE + " | Byte Long " + Long.MAX_VALUE);
 
 		//Min und Max Value von Char
-		System.out.println("Char min " + Character.MIN_VALUE + " | Char max " + Character.MAX_VALUE);
-		//System.out.println("\u0000 | \uffff");
+		System.out.println("Char min \u0000 | Char max \uffff");
 
 		//Min und Max Value von Float
 		System.out.println("Float min " + Float.MIN_VALUE + " | Float max " + Float.MAX_VALUE);
