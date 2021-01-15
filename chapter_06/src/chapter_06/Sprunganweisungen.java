@@ -16,31 +16,27 @@ public class Sprunganweisungen {
 	/**
 	 * Kleine einfache Implementierung von Nutzern, mithilfe
 	 * einer switch-Anweisung
-	 * @param userID
-	 * @param userPw
-	 * @return
+	 * @param userID ID die beim login eingegeben wurde
+	 * @param userPw Password was bei login eingegeben wurde
+	 * @return Wenn die ID und das Passwort übereinstimmen,
+	 * wird true zurück gegeben
 	 */
 	private static boolean userData(int userID, String userPw) {
-		switch (userID) {
-		case 1:
-			return userPw.equals("hallo")? true:false;
-		case 112:
-			return userPw.equals("das")? true:false;
-		case 124:
-			return userPw.equals("ist")? true:false;
-		case 345:
-			return userPw.equals("nicht")? true:false;
-		case 653:
-			return userPw.equals("geheim")? true:false;
-		}
-		return false;
+		return switch (userID) {
+			case 1 -> userPw.equals("hallo");
+			case 112 -> userPw.equals("das");
+			case 124 -> userPw.equals("ist");
+			case 345 -> userPw.equals("nicht");
+			case 653 -> userPw.equals("geheim");
+			default -> false;
+		};
 	}
 	
 	/**
 	 * Hier befindet sich das Login feld
 	 */
 	private static void login() {
-		int id = 0;
+		int id;
 		Scanner sc = new Scanner(System.in);
 		do {
 			System.out.println("Willkommen...!");
@@ -67,7 +63,6 @@ public class Sprunganweisungen {
 			 * und eine Fehlermeldung wird ausgegeben
 			 */
 			if(!userData(id, sc.next())) {
-				id = 0;
 				System.out.println("Ihre Angaben sind leider falsch, versuchen Sie es erneut.");
 			} else
 				break;

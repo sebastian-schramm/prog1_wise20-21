@@ -10,8 +10,8 @@ import java.util.Scanner;
 public class Matrizen {
 
 	public static void main(String[] args) {
-		int matrixA[][];
-		int matrixB[][];
+		int[][] matrixA;
+		int[][] matrixB;
 		
 		//Hier können sie die Größe definieren, z.B. 2,3 oder 5
 		System.out.println("Dieses Programm berechnet eine zufällig erstellte nxn Matrix");
@@ -20,13 +20,13 @@ public class Matrizen {
 
 		//Prüft ob der Userinput eine Zahl ist und ob diese größer als Eins ist
 		int n = 0;
-		boolean isInt = false;
+		boolean isInt;
 		do {
 			isInt = sc.hasNextInt();
 			if (!isInt) {
 				System.out.println("Es dürfen nur Zahlen verwendet werden");
 				sc.next();
-			} else if ((isInt && (n = sc.nextInt()) < 2))
+			} else if ((n = sc.nextInt()) < 2)
 				System.out.println("Die Zahl muss größer gleich 2 sein");
 		} while (n < 2);
 		/*
@@ -69,7 +69,7 @@ public class Matrizen {
 	 * @return matrix
 	 */
 	private static int[][] initialize(int n) {
-		int matrix[][] = new int[n][n];
+		int[][] matrix = new int[n][n];
 		/*
 		 * Bei der Initialisierung wird einmal durch das gesamt Array durch iteriert.
 		 * Dabei werden dann mit Math.random() zufällige Zahlen rein geschrieben.
@@ -87,8 +87,8 @@ public class Matrizen {
 	 * @param matrixB
 	 * @return Gibt ein neues Array mit den Addierten Werten zurück
 	 */
-	private static int[][] addition(int matrixA[][], int matrixB[][]) {
-		int matrixAd[][] = new int[matrixA.length][matrixA[0].length]; //Es wird ein neues Temporäres Array angelegt
+	private static int[][] addition(int[][] matrixA, int[][] matrixB) {
+		int[][] matrixAd = new int[matrixA.length][matrixA[0].length]; //Es wird ein neues Temporäres Array angelegt
 		
 		for (int i = 0; i < matrixA.length; ++i) {
 			for (int n = 0; n < matrixA[i].length; ++n) {
@@ -105,8 +105,8 @@ public class Matrizen {
 	 * @param matrixB
 	 * @return Gibt ein neues Array mit den Multiplizierten Werten zurück
 	 */
-	private static int[][] multiplikationFor(int matrixA[][], int matrixB[][]) {
-		int matrixMult[][] = new int[matrixB.length][matrixB[0].length];
+	private static int[][] multiplikationFor(int[][] matrixA, int[][] matrixB) {
+		int[][] matrixMult = new int[matrixB.length][matrixB[0].length];
 		
 		//Hier die Variante mit For Schleifen
 		for (int HmatrixB = 0; HmatrixB < matrixB.length; ++HmatrixB)
@@ -123,8 +123,8 @@ public class Matrizen {
 	 * @param matrixB
 	 * @return Gibt ein neues Array mit den Multiplizierten Werten zurück
 	 */
-	private static int[][] multiplikationWhile(int matrixA[][], int matrixB[][]) {
-		int matrixMult[][] = new int[matrixB.length][matrixB[0].length];
+	private static int[][] multiplikationWhile(int[][] matrixA, int[][] matrixB) {
+		int[][] matrixMult = new int[matrixB.length][matrixB[0].length];
 		
 		int HmatrixB = 0;
 		int WmatrixB = 0;
@@ -152,8 +152,8 @@ public class Matrizen {
 	 * @param matrixB
 	 * @return Gibt ein neues Array mit den Multiplizierten Werten zurück
 	 */
-	private static int[][] multiplikationDoWhile(int matrixA[][], int matrixB[][]) {
-		int matrixMult[][] = new int[matrixB.length][matrixB[0].length];
+	private static int[][] multiplikationDoWhile(int[][] matrixA, int[][] matrixB) {
+		int[][] matrixMult = new int[matrixB.length][matrixB[0].length];
 		
 		int HmatrixB = 0;
 		int WmatrixB = 0;
@@ -180,8 +180,8 @@ public class Matrizen {
 	 * Hier wird die Matrix ausgegeben
 	 * @param matrix
 	 */
-	private static void printMatrix(int matrix[][]) {
-		for (int y[]: matrix) {
+	private static void printMatrix(int[][] matrix) {
+		for (int[] y : matrix) {
 			for (int x: y)
 				System.out.print(x + "\t");
 			System.out.println();
