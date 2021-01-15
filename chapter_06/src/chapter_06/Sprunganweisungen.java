@@ -8,7 +8,6 @@ import java.util.Scanner;
  *
  */
 public class Sprunganweisungen {
-	private static int id;
 
 	public static void main(String[] args) {
 		login();
@@ -41,6 +40,7 @@ public class Sprunganweisungen {
 	 * Hier befindet sich das Login feld
 	 */
 	private static void login() {
+		int id = 0;
 		Scanner sc = new Scanner(System.in);
 		do {
 			System.out.println("Willkommen...!");
@@ -50,10 +50,14 @@ public class Sprunganweisungen {
 			 * Eine kleine Abfrage die Prüft, ob die eingegebene
 			 * ID nur aus Zahlen besteht
 			 */
-			while (!sc.hasNextInt()) {
-				System.out.println("Error, es dürfen nur Zahlen enthalten sein.");
+			do {
+				if (!sc.hasNextInt()) {
+					System.out.println("Error, es dürfen nur Zahlen enthalten sein.");
+					System.out.print("ID      : ");
+				} else
+					break;
 				sc.nextLine();
-			}
+			} while (true);
 			id = sc.nextInt();
 			
 			System.out.print("Passwort: ");
@@ -62,16 +66,17 @@ public class Sprunganweisungen {
 			 * nicht existiert, wird die ID zurückgesetzt 
 			 * und eine Fehlermeldung wird ausgegeben
 			 */
-			if(!userData(id, sc.next())) { 
+			if(!userData(id, sc.next())) {
 				id = 0;
 				System.out.println("Ihre Angaben sind leider falsch, versuchen Sie es erneut.");
-			}
+			} else
+				break;
 			
 		/*
 		 * Die Schleife wird solange durchlaufen, bis sich ein nutzer
 		 * erfolgreich angemeldet hat.
 		 */
-		} while (id == 0);
+		} while (true);
 		
 		System.out.println("Juhu, Sie haben sich eingeloggt");
 		sc.close();

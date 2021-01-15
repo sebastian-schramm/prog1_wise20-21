@@ -26,10 +26,7 @@ public class Matrizen {
 			if (!isInt) {
 				System.out.println("Es dürfen nur Zahlen verwendet werden");
 				sc.next();
-			} else
-				n = sc.nextInt();
-
-			if (isInt && n < 2)
+			} else if ((isInt && (n = sc.nextInt()) < 2))
 				System.out.println("Die Zahl muss größer gleich 2 sein");
 		} while (n < 2);
 		/*
