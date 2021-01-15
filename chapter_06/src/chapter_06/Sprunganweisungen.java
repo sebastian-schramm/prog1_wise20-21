@@ -49,12 +49,13 @@ public class Sprunganweisungen {
 			do {
 				if (!sc.hasNextInt()) {
 					System.out.println("Error, es dürfen nur Zahlen enthalten sein.");
-					System.out.print("ID      : ");
-				} else
+					sc.next();
+				} else if ((id = sc.nextInt()) < 1)
+					System.out.println("Die Zahl muss größer gleich 1 sein");
+				else
 					break;
-				sc.nextLine();
+				System.out.print("ID      : ");
 			} while (true);
-			id = sc.nextInt();
 			
 			System.out.print("Passwort: ");
 			/*
