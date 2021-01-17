@@ -1,0 +1,21 @@
+@startuml
+skinparam classAttributeIconSize 0
+
+class Main {
+ +void main() : static
+}
+
+class GeradeZahl extends OddException{
+
+ GeradeZahl(int zahl1)
+ +plus(GeradeZahl zahl2): int
+ +mult(GeradeZahl zahl2): int
+ +mult(int zahl2): int
+ +getZahl(): int
+ +toString(String zahl): String
+}
+
+class OddException {
+ +getMessage(int zahl): String
+}
+@enduml
