@@ -7,17 +7,11 @@ public class GeradeZahl {
      * Konstruktor, hier wird geprüft ob es sich bei der Zahl um eine gerade Zahl handelt
      * @param zahl1
      */
-    public GeradeZahl(int zahl1) {
-        OddException oddexception = new OddException();
+    public GeradeZahl(int zahl1) throws OddException {
         this.zahl1 = zahl1;
 
         //Wenn die Zahl ungerade ist, wird eine Exception geworfen
-        try {
-            if (zahl1%2 == 1) throw oddexception;
-        } catch ( OddException a ) {
-            //Bei einer Exception wird eine ausgabe getätigt, zusätzlich wird die Zahl um eins erhöht
-            System.out.println(a.getMessage(this.zahl1++));
-        }
+        if (zahl1%2 == 1) throw new OddException(zahl1);
     }
 
     /**

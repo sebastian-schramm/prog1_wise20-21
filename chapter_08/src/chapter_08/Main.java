@@ -6,7 +6,7 @@ package chapter_08;
  */
 public class Main {
 
-    public static void main(String[] args) throws IllegalAccessException {
+    public static void main(String[] args) throws OddException {
         GeradeZahl zahl1 = new GeradeZahl(10);
         GeradeZahl zahl2 = new GeradeZahl(21);
         GeradeZahl zahl3 = new GeradeZahl(30);

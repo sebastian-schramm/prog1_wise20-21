@@ -4,6 +4,8 @@ public class MyException extends Exception {
 
     @Override
     public String getMessage() {
-        return "Error, nur true oder false erlaubt";
+        return "Error, kein gültiger start Parameter, nur true oder false ist erlaubt!";
     }
+
+
 }

@@ -7,6 +7,8 @@ import java.util.Scanner;
  * @author sebastian
  */
 public class Main {
+    private static final String ANSI_RESET = "\u001B[0m";
+    private static final String ANSI_RED = "\u001B[31m";
 
     public static void main(String[] args) throws MyException {
         boolean caseSensitive;
