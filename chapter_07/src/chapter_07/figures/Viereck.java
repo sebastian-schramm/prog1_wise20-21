@@ -1,4 +1,4 @@
-package figures;
+package chapter_07.figures;
 
 abstract class Viereck {
 

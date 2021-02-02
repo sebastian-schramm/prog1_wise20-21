@@ -1,4 +1,6 @@
-import figures.*;
+package chapter_07;
+
+import chapter_07.figures.*;
 
 public class Main {
 
