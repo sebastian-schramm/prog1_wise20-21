@@ -11,9 +11,10 @@ public class IO{
     private ArrayList<String> wordsSorted;
     private final boolean caseSensitive;
 
-    private static final String searchHeadline = "span class=\"headline\"";
-    private static final String searchSubtitleSmall = "class=\"subtitle small \"";
-    private static final String searchTextSmall = "class=\"text small\"";
+    private static final String searchHeadline = "class=\"meldungskopf__headline--text\"";
+    private static final String searchSubtitleSmall = "class=\"meldung_";
+    private static final String searchTextSmall = "textabsatz columns twelve\"";
+
     private static final String ANSI_RESET = "\u001B[0m";
     private static final String ANSI_RED = "\u001B[31m";
 
@@ -85,8 +86,14 @@ public class IO{
                  * Tags aus dieser Zeile, sodass wir nur noch den Text über haben
                  */
                 line = sc.nextLine();
-                if (line.contains(searchHeadline) || line.contains(searchSubtitleSmall) || line.contains(searchTextSmall)) {
-                    webContent.add(line.replaceAll("\\<.*?\\>\\h*", ""));
+                if (line.contains(searchHeadline) || line.contains(searchTextSmall)) {
+                    line = sc.nextLine();
+                    System.out.println(line.stripLeading().replaceAll("&amp;", "&").replaceAll("\\<.*?\\>\\h*", ""));
+                    webContent.add(line.stripLeading().replaceAll("&amp;", "&").replaceAll("\\<.*?\\>\\h*", ""));
+                }
+                if (line.contains(searchSubtitleSmall)) {
+                    System.out.println(line.stripLeading().replaceAll("\\<.*?\\>\\h*", ""));
+                    webContent.add(line.stripLeading().replaceAll("\\<.*?\\>\\h*", ""));
                 }
             }
             System.out.println("Loading done");
@@ -107,15 +114,15 @@ public class IO{
     public void writeToFile(ArrayList<String> content) {
         FileWriter out = null;
 
-        if (content != null)
+        if (content != null && content.size() != 0)
             try {
                 //Setzt den Dateinamen fest
-                out = new FileWriter(content.get(0).replaceAll("[^a-zA-ZäöüÄÖÜß\\h-]", "") + ".txt");
+                out = new FileWriter(content.get(0).replaceAll("[^a-zA-ZäöüÄÖÜß&%\\h-]", "") + ".txt");
 
                 //Fügt jede Zeile vom content hinzu und fügt ein Zeilenumbruch am ende hinzu
                 for (String s : content)
                     out.append(s + "\n");
-                System.out.println("Data written do file called: " + content.get(0).replaceAll("[^a-zA-ZäöüÄÖÜß\\h-]", "") + ".txt\n");
+                System.out.println("Data written do file called: " + content.get(0).replaceAll("[^a-zA-ZäöüÄÖÜß%&\\h-]", "") + ".txt\n");
             } catch (IOException e) {
                 System.out.println("Datei konnte nicht erstellt werden");
             } finally {
@@ -142,7 +149,7 @@ public class IO{
                  * Läuft durch jede Zeile und entfernt alle unerwünschten Zeichen
                  * Anschließen wird bei Jeden Leerzeichen ein split gemacht
                  */
-                String[] line = sc.nextLine().replaceAll("[\\h]-", " ").replaceAll(" ", "").replaceAll("[^a-zA-ZäöüÄÖÜß\\h-]", "").split(" ");
+                String[] line = sc.nextLine().replaceAll("[\\h]-", " ").replaceAll(" ", "").replaceAll("[^a-zA-ZäöüÄÖÜß&\\h-]", "").split(" ");
                 for (String words : line)
                     /*
                      * Hier wird noch kurz geprüft der String befüllt ist
