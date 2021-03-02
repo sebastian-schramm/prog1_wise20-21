@@ -2,17 +2,12 @@ package chapter_07.figures;
 
 public class Rhombus extends Parallelogramm {
 
+    /**
+     * Konstruktor, hier werden die Attribute initialisiert
+     * @param a
+     * @param hA
+     */
     public Rhombus(double a, double hA) {
-        super(a, hA);
-    }
-
-    @Override
-    public double umfang() {
-        return a * 4;
-    }
-
-    @Override
-    public double flächeninhalt() {
-        return a * hA;
+        super(a, a,  hA);
     }
 }
