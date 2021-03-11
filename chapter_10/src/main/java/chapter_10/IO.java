@@ -86,12 +86,12 @@ public class IO{
                  * Tags aus dieser Zeile, sodass wir nur noch den Text über haben
                  */
                 line = sc.nextLine();
-                if (line.contains(searchHeadline) || line.contains(searchTextSmall)) {
+                if (line.contains(searchTextSmall)) {
                     line = sc.nextLine();
                     System.out.println(line.stripLeading().replaceAll("&amp;", "&").replaceAll("\\<.*?\\>\\h*", ""));
                     webContent.add(line.stripLeading().replaceAll("&amp;", "&").replaceAll("\\<.*?\\>\\h*", ""));
                 }
-                if (line.contains(searchSubtitleSmall)) {
+                if (line.contains(searchHeadline) || line.contains(searchSubtitleSmall)) {
                     System.out.println(line.stripLeading().replaceAll("\\<.*?\\>\\h*", ""));
                     webContent.add(line.stripLeading().replaceAll("\\<.*?\\>\\h*", ""));
                 }
