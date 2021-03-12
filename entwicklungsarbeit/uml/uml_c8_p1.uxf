@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>290</x>
+      <y>150</y>
+      <w>160</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>Main
+--
++void main()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>510</x>
+      <y>150</y>
+      <w>230</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>OddException
+--
++getMessage(int zahl): String</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>510</x>
+      <y>240</y>
+      <w>230</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>GeradeZahl
+--
+GeradeZahl(int Zahl)
++plus(GeradeZahl zahl2): int
++mult(GeradeZahl zahl2): int
++toString(String zahl): String</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>620</x>
+      <y>190</y>
+      <w>30</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;50.0</additional_attributes>
+  </element>
+</diagram>

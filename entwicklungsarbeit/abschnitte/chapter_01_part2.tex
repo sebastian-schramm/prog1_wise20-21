@@ -1,9 +1,9 @@
 \section{Kapitel 1}
 \subsection{Aufgabenstellung}
-Wir sollen ein Programm schreiben welches den Text "Dear Prudence\dq \space in der Konsole ausgibt. 
-Um uns mit Java vertraut zu machen, sollten wir das erste Programm in der Kommandozeile schreiben.
-Anschlie\ss end mit Javac Kompilieren und mit Java ausführen. Danach öffnen wir unsere IDE, erstellen
-ein neues Projekt und schreib das selbe Programm diesmal in der IDE.
+Um uns mit Java und der Konsole vertraut zu machen sollten wir zuerst ein Java Programm in der Konsole
+schreiben, welches "Dear Prudence\dq \space ausgibt. Anschlie\ss end mit Javac Kompilieren und mit Java
+ausführen. Wenn wir dies geschafft haben, sollte wir als nächstes in NetBeans ein neues Projekt erstellen
+und dort das selbe Programm erneut Programmieren. 
 
 \subsection{Anforderungsdefinition}
 \begin{enumerate}
@@ -11,11 +11,13 @@ ein neues Projekt und schreib das selbe Programm diesmal in der IDE.
 \end{enumerate}
 
 \subsection{Entwurf}
-\input{uml/chapter_01_part2.tex}
+\begin{center}
+	\includegraphics[width=0.4\textwidth]{uml/uml_c1_p2.pdf}
+\end{center}
 
 \subsection{Quellcode}
 \subsubsection{Main.java}
-\lstinputlisting[language = Java , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]{../chapter_01/src/chapter_01/Main.java}
+\lstinputlisting[language = Java , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]{../chapter_01/src/main/java/chapter_01/Main.java}
 
 \subsection{Testdokumentation}
 Wenn das Programm gestartet wird, sollte "Dear Prudence\dq \space auf der Konsole ausgegeben werde.

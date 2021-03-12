@@ -33,15 +33,6 @@ public class GeradeZahl {
     }
 
     /**
-     * Multipliziert ein GeradeZahl objekte mit einer int Zahl
-     * @param zahl2
-     * @return Gibt eine int Zahl zurück
-     */
-    public int mult(int zahl2) {
-        return zahl1 * zahl2;
-    }
-
-    /**
      * @return Liefert die Zahl zurück
      */
     public int getZahl() {

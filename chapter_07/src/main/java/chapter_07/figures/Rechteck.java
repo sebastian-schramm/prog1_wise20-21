@@ -8,6 +8,6 @@ public class Rechteck extends Parallelogramm {
      * @param b
      */
     public Rechteck(double a, double b) {
-        super(a, b, b);
+        super(a, b, 90);
     }
 }

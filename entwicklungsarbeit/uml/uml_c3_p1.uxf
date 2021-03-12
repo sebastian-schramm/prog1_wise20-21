@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>20</x>
+      <y>20</y>
+      <w>300</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>Typconvertierung
+--
++main() static
+-convertByte(byte: _byte) static
+-convertShort(short: _short) static
+-convertInt(int: _int) static
+-convertLong(long: _long) static
+-convertChar(char: _char) static
+-convertFloat(float: _float) static
+-convertDouble(double: _double) static</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

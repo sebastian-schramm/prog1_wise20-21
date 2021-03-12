@@ -1,5 +1,6 @@
 package chapter_06;
 
+import java.util.Random;
 import java.util.Scanner;
 /**
  * Klasse mit der Main-Methode
@@ -28,7 +29,9 @@ public class Matrizen {
 				sc.next();
 			} else if ((n = sc.nextInt()) < 2)
 				System.out.println("Die Zahl muss größer gleich 2 sein");
-		} while (n < 2);
+			else
+				break;
+		} while (true);
 		/*
 		 * Initialisierungsmethode wird mit dem Wert n aufgerufen.
 		 * Anschließend wird diese Matrix erzeugt und mit 
@@ -74,9 +77,11 @@ public class Matrizen {
 		 * Bei der Initialisierung wird einmal durch das gesamt Array durch iteriert.
 		 * Dabei werden dann mit Math.random() zufällige Zahlen rein geschrieben.
 		 */
+
+		Random rand = new Random();
 		for (int i = 0; i < matrix.length; ++i)
 			for (int l = 0; l < matrix[i].length; ++l)
-				matrix[i][l] = (int) (Math.random() * 100);
+				matrix[i][l] = rand.nextInt(200) - 100;
 		
 		return matrix;
 	}

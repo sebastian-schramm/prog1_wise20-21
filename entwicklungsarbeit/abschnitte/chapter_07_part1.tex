@@ -1,7 +1,7 @@
 \section{Kapitel 7}
 \subsection{Aufgabenstellung}
 Wie sollen 7 Klassen Definieren, dabei sollen wir uns überlegen welche davon Instanziierbar sind und welche
-nicht. Anschließen soll jede Klasse sinnvolle Methoden und Attribute enthalten.
+nicht. Anschlie\ss end soll jede Klasse sinnvolle Methoden und Attribute enthalten.
 
 \subsection{Anforderungsdefinition}
 \begin{enumerate}
@@ -10,25 +10,32 @@ nicht. Anschließen soll jede Klasse sinnvolle Methoden und Attribute enthalten.
 \end{enumerate}
 
 \subsection{Entwurf}
-\includegraphics[scale=0.5]{uml/uml_c7_p1.png}
+Für den Entwurf wurde ein Klassendiagramm angefertigt. Wobei hier die Klasse Viereck Abstrakt ist und
+die Wesentlichen Methoden beinhaltet. Beim Konvexen Viereck werden die wesentlichen Attribute eines 
+Vierecks definiert, dazu auch deren Berechnung. Zudem muss hier auch die Methode für den 
+Flächeninhalt und Umfang überschrieben werden. Das Trapez erbt vom Konvexen Viereck, Parallelogramm
+vom Trapez, Rhombus vom Parallelogramm, Rechteck von Parallelogramm ud Quadrat vom Rechteck. 
+\begin{center}
+	\includegraphics[width=0.95\textwidth]{uml/uml_c7_p1.pdf}
+\end{center}
 
 \subsection{Quelltext}
 \subsubsection{Main.java}\
-\lstinputlisting[language = Java , frame = trBL , escapeinside={(*@}{@*)}]{../chapter_07/src/chapter_07/Main.java}
+\lstinputlisting[language = Java , frame = trBL , escapeinside={(*@}{@*)}]{../chapter_07/src/main/java/chapter_07/Main.java}
 \subsubsection{Viereck.java}\
-\lstinputlisting[language = Java , frame = trBL , escapeinside={(*@}{@*)}]{../chapter_07/src/chapter_07/figures/Viereck.java}
+\lstinputlisting[language = Java , frame = trBL , escapeinside={(*@}{@*)}]{../chapter_07/src/main/java/chapter_07/figures/Viereck.java}
 \subsubsection{KonvexesViereck.java}\
-\lstinputlisting[language = Java , frame = trBL , escapeinside={(*@}{@*)}]{../chapter_07/src/chapter_07/figures/KonvexesViereck.java}
+\lstinputlisting[language = Java , frame = trBL , escapeinside={(*@}{@*)}]{../chapter_07/src/main/java/chapter_07/figures/KonvexesViereck.java}
 \subsubsection{Trapez.java}\
-\lstinputlisting[language = Java , frame = trBL , escapeinside={(*@}{@*)}]{../chapter_07/src/chapter_07/figures/Trapez.java}
+\lstinputlisting[language = Java , frame = trBL , escapeinside={(*@}{@*)}]{../chapter_07/src/main/java/chapter_07/figures/Trapez.java}
 \subsubsection{Parallelogramm.java}\
-\lstinputlisting[language = Java , frame = trBL , escapeinside={(*@}{@*)}]{../chapter_07/src/chapter_07/figures/Parallelogramm.java}
+\lstinputlisting[language = Java , frame = trBL , escapeinside={(*@}{@*)}]{../chapter_07/src/main/java/chapter_07/figures/Parallelogramm.java}
 \subsubsection{Rhombus.java}\
-\lstinputlisting[language = Java , frame = trBL , escapeinside={(*@}{@*)}]{../chapter_07/src/chapter_07/figures/Rhombus.java}
+\lstinputlisting[language = Java , frame = trBL , escapeinside={(*@}{@*)}]{../chapter_07/src/main/java/chapter_07/figures/Rhombus.java}
 \subsubsection{Rechteck.java}\
-\lstinputlisting[language = Java , frame = trBL , escapeinside={(*@}{@*)}]{../chapter_07/src/chapter_07/figures/Rechteck.java}
+\lstinputlisting[language = Java , frame = trBL , escapeinside={(*@}{@*)}]{../chapter_07/src/main/java/chapter_07/figures/Rechteck.java}
 \subsubsection{Quadrat.java}\
-\lstinputlisting[language = Java , frame = trBL , escapeinside={(*@}{@*)}]{../chapter_07/src/chapter_07/figures/Quadrat.java}
+\lstinputlisting[language = Java , frame = trBL , escapeinside={(*@}{@*)}]{../chapter_07/src/main/java/chapter_07/figures/Quadrat.java}
 
 \subsection{Testdokumentation}
 

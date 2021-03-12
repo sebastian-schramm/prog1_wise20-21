@@ -1,5 +1,7 @@
 package chapter_04;
 
+import java.util.Random;
+
 /**
  * Klasse mit der Main-Methode
  * Addiert und Multipliziert Matrizen
@@ -50,9 +52,11 @@ public class Matrizen {
 		 * Bei der Initialisierung wird einmal durch das gesamt Array dutch iteriert.
 		 * Dabei werden dann mit Math.random() zufällige Zahlen rein geschrieben.
 		 */
+
+		Random rand = new Random();
 		for (int i = 0; i < matrix.length; ++i)
 			for (int l = 0; l < matrix[i].length; ++l)
-				matrix[i][l] = (int) (Math.random() * 100);
+				matrix[i][l] = rand.nextInt(200) - 100;
 		
 		return matrix;
 	}

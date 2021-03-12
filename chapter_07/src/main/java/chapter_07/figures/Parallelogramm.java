@@ -6,11 +6,12 @@ public class Parallelogramm extends Trapez {
      * Konstruktor, hier werden die Attribute initialisiert
      * @param a
      * @param b
-     * @param hA
+     * @param winkelAlpha
      */
-    public Parallelogramm(double a, double b, double hA) {
-        super(a, b, 0, 0);
-        this.hA = hA;
+    public Parallelogramm(double a, double b, double winkelAlpha) {
+        super(a, b, a);
+        wAlpha = winkelAlpha;
+        wBeta = 180 - winkelAlpha;
     }
 
     @Override
@@ -22,7 +23,7 @@ public class Parallelogramm extends Trapez {
             return flaeche;
         else
             //Wenn der Flächeninhalt 0 ist, wird die fläche berechnet
-            return flaeche = hA * a;
+            return flaeche = a * b * Math.sin(Math.toRadians(wAlpha));
     }
 
     @Override

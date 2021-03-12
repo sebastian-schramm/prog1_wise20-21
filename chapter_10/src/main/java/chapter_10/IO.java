@@ -2,13 +2,15 @@ package chapter_10;
 
 import java.io.*;
 import java.net.URL;
+import java.nio.charset.Charset;
+import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Scanner;
 
 public class IO{
-    private ArrayList<String> wordsUnsorted;
-    private ArrayList<String> wordsSorted;
+    private static ArrayList<String> wordsUnsorted;
+    private static ArrayList<String> wordsSorted;
     private final boolean caseSensitive;
 
     private static final String searchHeadline = "class=\"meldungskopf__headline--text\"";
@@ -88,11 +90,11 @@ public class IO{
                 line = sc.nextLine();
                 if (line.contains(searchTextSmall)) {
                     line = sc.nextLine();
-                    System.out.println(line.stripLeading().replaceAll("&amp;", "&").replaceAll("\\<.*?\\>\\h*", ""));
+                    //System.out.println(line.stripLeading().replaceAll("&amp;", "&").replaceAll("\\<.*?\\>\\h*", ""));
                     webContent.add(line.stripLeading().replaceAll("&amp;", "&").replaceAll("\\<.*?\\>\\h*", ""));
                 }
                 if (line.contains(searchHeadline) || line.contains(searchSubtitleSmall)) {
-                    System.out.println(line.stripLeading().replaceAll("\\<.*?\\>\\h*", ""));
+                    //System.out.println(line.stripLeading().replaceAll("\\<.*?\\>\\h*", ""));
                     webContent.add(line.stripLeading().replaceAll("\\<.*?\\>\\h*", ""));
                 }
             }
@@ -117,11 +119,18 @@ public class IO{
         if (content != null && content.size() != 0)
             try {
                 //Setzt den Dateinamen fest
-                out = new FileWriter(content.get(0).replaceAll("[^a-zA-ZäöüÄÖÜß&%\\h-]", "") + ".txt");
+                out = new FileWriter(content.get(0).replaceAll("[^a-zA-ZäöüÄÖÜß&%\\h-]", "") + ".txt", Charset.forName("UTF-8"));
 
-                //Fügt jede Zeile vom content hinzu und fügt ein Zeilenumbruch am ende hinzu
+                //Fügt jede Zeile vom content hinzu und fügt ein Zeilenumbruch am ende hinzu, zudem werden die Umlaute ersetzt
                 for (String s : content)
-                    out.append(s + "\n");
+                    out.append(s.replace("ü", "ue")
+                                .replace("ö", "oe")
+                                .replace("ä", "ae")
+                                .replace("ß", "ss")
+                                .replaceAll("Ü(?=[a-zäöüß ])", "Ue")
+                                .replaceAll("Ö(?=[a-zäöüß ])", "Oe")
+                                .replaceAll("Ä(?=[a-zäöüß ])", "Ae")
+                                + "\n");
                 System.out.println("Data written do file called: " + content.get(0).replaceAll("[^a-zA-ZäöüÄÖÜß%&\\h-]", "") + ".txt\n");
             } catch (IOException e) {
                 System.out.println("Datei konnte nicht erstellt werden");
@@ -149,7 +158,7 @@ public class IO{
                  * Läuft durch jede Zeile und entfernt alle unerwünschten Zeichen
                  * Anschließen wird bei Jeden Leerzeichen ein split gemacht
                  */
-                String[] line = sc.nextLine().replaceAll("[\\h]-", " ").replaceAll(" ", "").replaceAll("[^a-zA-ZäöüÄÖÜß&\\h-]", "").split(" ");
+                String[] line = sc.nextLine().replaceAll(" ", "").replaceAll("[^a-zA-Z\\h-]", "").replaceAll("[\\h]-", " ").split(" ");
                 for (String words : line)
                     /*
                      * Hier wird noch kurz geprüft der String befüllt ist

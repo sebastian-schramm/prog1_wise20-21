@@ -32,11 +32,21 @@ public class KonvexesViereck extends Viereck {
 
         this.wBeta = winkelBeta;
         this.wGamma = winkelGamma;
+
         calcE();
         calcF();
-        calcBeta();
         calcD();
         calcAlpha();
+        calcDelta();
+
+        try {
+            if (wAlpha + wBeta + wGamma + wDelta < 359.99)
+                throw new Exception("Error, die Summe der Winkel ist under 360 Grad " + (wAlpha + wBeta + wGamma + wDelta));
+        } catch (Exception exception) {
+            exception.printStackTrace();
+            //System.exit(0);
+        }
+
     }
 
     @Override
@@ -95,27 +105,28 @@ public class KonvexesViereck extends Viereck {
      * Berechnet den Winkel Alpha
      */
     private void calcAlpha() {
-        wAlpha = Math.toDegrees(Math.acos((a*a + d*d - f*f) / (2 * a * d)));
+
+        wAlpha = round(Math.toDegrees(Math.acos((a*a + d*d - f*f) / (2 * a * d))));
     }
 
     /**
      * Berechnet den Winkel Beta
      */
     private void calcBeta() {
-        wAlpha = Math.toDegrees(Math.acos((a*a + b*b - e*e) / (2 * a * b)));
+        wBeta = round(Math.toDegrees(Math.acos((a*a + b*b - e*e) / (2 * a * b))));
     }
 
     /**
      * Berechnet den Winkel Gamma
      */
     private void calcGamma() {
-        wAlpha = Math.toDegrees(Math.acos((b*b + c*c - f*f) / (2 * b * c)));
+        wGamma = round(Math.toDegrees(Math.acos((b*b + c*c - f*f) / (2 * b * c))));
     }
 
     /**
      * Berechnet den Winkel Delta
      */
     private void calcDelta() {
-        wAlpha = Math.toDegrees(Math.acos((a*a + d*d - e*e) / (2 * c * d)));
+        wDelta = round(Math.toDegrees(Math.acos((c*c + d*d - e*e) / (2 * c * d))));
     }
 }

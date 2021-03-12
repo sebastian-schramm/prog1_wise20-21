@@ -7,7 +7,7 @@ public class Rhombus extends Parallelogramm {
      * @param a
      * @param hA
      */
-    public Rhombus(double a, double hA) {
-        super(a, a,  hA);
+    public Rhombus(double a, double winkelAlpha) {
+        super(a, a, winkelAlpha);
     }
 }

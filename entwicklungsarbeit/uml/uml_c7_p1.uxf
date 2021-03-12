@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>340</x>
+      <y>140</y>
+      <w>430</w>
+      <h>400</h>
+    </coordinates>
+    <panel_attributes>KonvexesViereck
+--
+#a: double
+#b: double
+#c: double
+#d: double
+#f: double
+#e: double
+#wAlpha: double
+#wBeta: double
+#wGamma: double
+#wDelta: double
+#flaeche: double
+#umfang: double
+--
++KonvexesViereck(double, double, double, double, double)
++flächeninhalt(): double
++umfang(): double
+-calcE(): void
+-calcF(): void
+-calcD(): void
+-calcAlpha(): void
+-calcBeta(): void
+-calcGamma(): void
+-calcDelta(): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>450</x>
+      <y>0</y>
+      <w>220</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>&lt;Abstract&gt;
+/Viereck/
+--
+flächeninhalt(): double
+unfang(): double
+#round(double): double
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>400</x>
+      <y>590</y>
+      <w>310</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>Trapez
+--
+#hA: double
+--
++Trapez(double, double, double, double)
++Trapez(double, double, double)
+--
++flächeninhalt(): double
++umfang(): double
+-calcH(): void
+-calcD(): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>870</x>
+      <y>0</y>
+      <w>170</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>Main
+--
++main(String[]): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>340</x>
+      <y>1010</y>
+      <w>230</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>Rechteck
+--
++Rechteck(double, double)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>400</x>
+      <y>820</y>
+      <w>310</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>Parallelogramm
+--
++Parallelogramm(double, double, double)
+--
++flächeninhalt(): double
++umfang(): double</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>620</x>
+      <y>1010</y>
+      <w>230</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>Rhombus
+--
++Rhombus(double, double)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>340</x>
+      <y>1110</y>
+      <w>230</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>Quadrat
+--
++Quadrat(double, double)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>590</x>
+      <y>920</y>
+      <w>160</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;50.0;140.0;50.0;140.0;90.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>470</x>
+      <y>920</y>
+      <w>30</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;90.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>440</x>
+      <y>1060</y>
+      <w>30</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>540</x>
+      <y>760</y>
+      <w>30</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;60.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>540</x>
+      <y>530</y>
+      <w>30</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;60.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>550</x>
+      <y>90</y>
+      <w>30</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;50.0</additional_attributes>
+  </element>
+</diagram>

@@ -1,19 +1,27 @@
 \subsection{Teilaufgabe 2}
 \subsubsection{Aufgabenstellung}
-In der zweiten Teilaufgabe sollten wir Sprunganweisungen in Java Sinnvoll verdeutlichen.
+In der zweiten Teilaufgabe sollten wir ein Programm schreiben welches Sprunganweisungen in Java
+ Sinnvoll verdeutlichen.
 
 \subsubsection{Anforderungsdefinition}
 \begin{enumerate}
-	\item Verwenden sie Sprunganweisungen.
+	\item Verwendung von Sprunganweisungen.
 	\item Mindestens ein switch-Anweisung.
 \end{enumerate}
 
 \subsubsection{Entwurf}
-%\input{uml/chapter_06_part2.tex}
+Im folgenden ist ein Entwurf für ein einfaches Login. Zuerst wird der Nutzer aufgefordert seine ID
+anzugeben. Dabei wird geprüft ob es sich um eine Zahl handelt und ob diese Zahl grö\ss er gleich Eins ist.
+Anschlie\ss end wird wird in einem switch überprüft ob eine solche ID existiert und ob das angegebene
+Passwort auch das richtige ist. Wenn alles Stimmt wird eine Willkommens Nachricht  ausgegeben.
+Andernfalls wird der Nutzer aufgefordert alles erneut einzutippen.
+\begin{center}
+	\includegraphics[width=0.8\textwidth]{uml/uml_c6_p2.pdf}
+\end{center}
 
 \subsubsection{Quelltext}
 \paragraph{Sprunganweisungen.java}\
-\lstinputlisting[language = Java , frame = trBL , escapeinside={(*@}{@*)}]{../chapter_06/src/chapter_06/Sprunganweisungen.java}
+\lstinputlisting[language = Java , frame = trBL , escapeinside={(*@}{@*)}]{../chapter_06/src/main/java/chapter_06/Sprunganweisungen.java}
 
 \subsubsection{Testdokumentation}
 Bei Zahlen die kleiner als 1 waren, sowie Buchstaben, kam es zu einer entsprechenden Fehlermeldung. Anschließend konnte man den Wert erneut eintippen.

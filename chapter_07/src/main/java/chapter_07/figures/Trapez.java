@@ -12,7 +12,32 @@ public class Trapez extends KonvexesViereck {
      * @param winkelBeta
      */
     public Trapez(double a, double b, double c, double winkelBeta) {
-        super(a, b, c, winkelBeta, 0);
+        super(a, b, c, winkelBeta, 180 - winkelBeta);
+        /*System.out.println(wAlpha);
+        System.out.println(wBeta);
+        System.out.println(wGamma);
+        System.out.println(wDelta);*/
+        try {
+            if (c > a)
+                throw  new Exception("Seite C muss kleiner als seine A sein");
+            if (wAlpha > 90.00 || wBeta > 90.00 || wGamma <= 90.00 || wDelta <= 90.00)
+                throw new Exception("Alpha oder Beta ist größer als 90 Grad");
+        } catch (Exception exception) {
+            exception.printStackTrace();
+        }
+        calcH();
+        calcD();
+    }
+
+    /**
+     * Konstruktor für ein Rechtwinkliges Trapez
+     * @param a
+     * @param b
+     * @param c
+     */
+    public Trapez (double a, double b, double c) {
+        super(a, b, c, 90, 90);
+
         calcH();
         calcD();
     }

@@ -1,7 +1,7 @@
 \subsection{Teilaufgabe 2}
 \subsubsection{Aufgabenstellung}
-In dieser Teilaufgabe sollen wir ein Programm schreiben welle die Wertebereiche der primitiven
-Datentypen ausgibt.
+In der Zweiten Teilaufgabe sollen wir uns mit den Wertebereichen der Primitiven Datentypen befassen und
+deren Wertebereiche in einem Programm ausgeben.
 
 \subsubsection{Anforderungsdefinition}
 \begin{enumerate}
@@ -9,16 +9,19 @@ Datentypen ausgibt.
 \end{enumerate}
 
 \subsubsection{Entwurf}
-\includegraphics[scale=0.75]{uml/uml_c3_p1.png}
+\begin{center}
+	\includegraphics[width=0.5\textwidth]{uml/uml_c3_p2.pdf}
+\end{center}
 
 \subsubsection{Quelltext}
 \paragraph{Wertebereiche.java}\
-\lstinputlisting[language = Java , frame = trBL , escapeinside={(*@}{@*)}]{../chapter_03/src/chapter_03/Wertebereiche.java}
+\lstinputlisting[language = Java , frame = trBL , escapeinside={(*@}{@*)}]{../chapter_03/src/main/java/chapter_03/Wertebereiche.java}
 
 
 \subsubsection{Testdokumentation}
 Nach dem Start des Programms sollten die Min und Max werte der einzelnen Datentypen ausgegeben
-werden, dies war auch der Fall.
+werden. Anschlie\ss end wurden die Werten mit den in der Java Dokumentation stehenden Werten
+verglichen. Alles hat soweit gestimmt.
 
 \subsubsection{Benutzungshinweise}
 Keine Besonderen Benutzungshinweise.
@@ -26,7 +29,8 @@ Man navigiere zu dem Ordner von sich die Compilierte Datei mit dem Namen "Werteb
 \space befindet und führt anschlie\ss end java Wertebereiche aus.
 
 \subsubsection{Anwendungsbeispiel}
-Nach dem man das Programm gestartet hat, sollte folgende Ausgabe erscheinen:
+Nach dem man das Programm gestartet hat (aufgrund der Formatierung, werden einige Zeichen bei Char nicht dargestellt), sollte folgende Ausgabe erscheinen:
+
 \begin{lstlisting}[frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
 [sebastian@laptop bin]$ java Wertebereiche
 Byte min -128 | Byte max 127

@@ -52,3 +52,13 @@
 	breaklines = true, %% enable line breaking
 	numberstyle = \tiny,
 }
+
+%Header and Footer
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{\tag}
+\lhead{\@title \space- \modul}
+\lfoot{\authorA}
+\rfoot{Seite \thepage \space von \pageref{LastPage}}

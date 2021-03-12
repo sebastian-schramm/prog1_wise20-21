@@ -16,15 +16,21 @@ beachtet wird.
 \end{enumerate}
 
 \subsection{Entwurf}
-\includegraphics[scale=0.55]{uml/uml_c8_p1.png}
+Zum Entwurf wurde ein Klassendiagramm gewählt welches die Methoden und deren Attribute der
+jeweiligen Klassen veranschaulicht. DIe IO Klasse befasst sich mit dem Einlesen einer Datei, sowie auch
+das anlegen neuer Dateien. Des weiterem kann die Klasse auch einen Artikel von der Tagesschau heruntergeladen werden, hierfür muss nur ein Link angegeben werden. Wenn ein Artikel heruntergeladen
+wurden, kann dieser eingelesen werden und anschlie\ss end Sortiert ausgeben werden.
+\begin{center}
+	\includegraphics[width=0.98\textwidth]{uml/uml_c10_p1.pdf}
+\end{center}
 
 \subsection{Quelltext}
 \subsubsection{Main.java}
-\lstinputlisting[language = Java , frame = trBL , escapeinside={(*@}{@*)}]{../chapter_10/src/chapter_10/Main.java}
+\lstinputlisting[language = Java , frame = trBL , escapeinside={(*@}{@*)}]{../chapter_10/src/main/java/chapter_10/Main.java}
 \subsubsection{IO.java}
-\lstinputlisting[language = Java , frame = trBL , escapeinside={(*@}{@*)}]{../chapter_10/src/chapter_10/IO.java}
+\lstinputlisting[language = Java , frame = trBL , escapeinside={(*@}{@*)}]{../chapter_10/src/main/java/chapter_10/IO.java}
 \subsubsection{MyException.java}
-\lstinputlisting[language = Java , frame = trBL , escapeinside={(*@}{@*)}]{../chapter_10/src/chapter_10/MyException.java}
+\lstinputlisting[language = Java , frame = trBL , escapeinside={(*@}{@*)}]{../chapter_10/src/main/java/chapter_10/MyException.java}
 
 \subsection{Testdokumentation}
 \begin{itemize}
@@ -60,49 +66,23 @@ Alphabetischer Reihenfolge ausgibt.
 	0) Programm Beenden.
 	1
 	Bitte gebe den Link an:
-	lasdfl
-	Loading Content
-	Es konnte keine Verbindung hergestellt werden. Bitte überprüfen Sie die angegebene address, oder ihre Internetverbindung!
-	Error, kein Inhalt gefunden!
-	
-	Bitte wähle einer der Folgenden Optionen aus:
-	1) Einen Artikel von der Tagesschau herunterladen.
-	2) Eine Datei laden.
-	3) Wörter ausgeben.
-	0) Programm Beenden.
-	1
-	Bitte gebe den Link an:
-	https://www.tagesschau.de/inland/bundeslaender-schulen-corona-101.html
+	https://www.tagesschau.de/inland/gesellschaft/johnsonjohnson-103.html
 	Loading Content
 	Loading done
-	Data written do file called: Bei Schulen gehen die Länder Sonderwege.txt
+	Data written do file called: Warum punktet der neue Impfstoff.txt
 	
 	Bitte wähle einer der Folgenden Optionen aus:
 	1) Einen Artikel von der Tagesschau herunterladen.
 	2) Eine Datei laden.
 	3) Wörter ausgeben.
 	0) Programm Beenden.
+	a
+	Es sind nur Zahlen erlaubt
+	b
+	Es sind nur Zahlen erlaubt
 	2
-	Bitte geben Sie den Dateinamen an:
-	Test
-	Error, es wurde noch keine Datei geladen!
-	
-	Bitte wähle einer der Folgenden Optionen aus:
-	1) Einen Artikel von der Tagesschau herunterladen.
-	2) Eine Datei laden.
-	3) Wörter ausgeben.
-	0) Programm Beenden.
-	3
-	Es wurde noch keine Datei Geladen!
-	
-	Bitte wähle einer der Folgenden Optionen aus:
-	1) Einen Artikel von der Tagesschau herunterladen.
-	2) Eine Datei laden.
-	3) Wörter ausgeben.
-	0) Programm Beenden.
-	2
-	Bitte geben Sie den Dateinamen an:
-	Bei Schulen gehen die Länder Sonderwege
+	Bitte geben Sie den Datei namen an:
+	Warum punktet der neue Impfstoff
 	Datei wurde Erfolgreich geladen
 	
 	Bitte wähle einer der Folgenden Optionen aus:
@@ -111,403 +91,379 @@ Alphabetischer Reihenfolge ausgibt.
 	3) Wörter ausgeben.
 	0) Programm Beenden.
 	3
-	ab 6x
-	aber 1x
-	Abitur 1x
-	Abschlussklassen 4x
-	Abschlussprüfungen 1x
-	Abständen 1x
-	abzumelden 1x
-	aktiv 1x
-	alle 2x
-	allen 1x
+	ab 4x
+	aber 4x
+	abgeschwaechten 1x
+	aehnliche 1x
+	aehnliches 1x
+	aendern 1x
+	Alle 2x
+	allen 2x
+	allerdings 1x
+	Allergien 1x
+	allergischen 1x
 	als 2x
 	also 1x
-	alten 1x
+	alsoauch 1x
+	Altersgruppe 1x
 	am 1x
-	an 6x
-	andere 1x
-	anderen 1x
-	anders 2x
-	Anfang 1x
-	angeboten 1x
-	Anmeldequote 1x
-	anschließend 1x
-	Anschluss 1x
-	anzubieten 1x
-	Appelle 1x
-	Auch 1x
-	auch 5x
-	auf 5x
-	aufgehoben 1x
-	aus 2x
-	ausgesetzt 2x
-	Ausnahmen 1x
-	ausnehme 1x
-	Baden-Württembergsgrüner 1x
-	Bayernlässt 1x
-	bedeute 1x
-	begrüßte 1x
-	Bei 3x
-	bei 1x
+	amp 1x
+	an 3x
+	anderen 3x
+	anhaelt 1x
+	ansteckend 1x
+	Antikoerper 2x
+	Anwendung 1x
+	Anzahl 1x
+	Arzneimittel-Agentur 1x
+	Arzneimittelhersteller 2x
+	AstraZeneca 4x
+	AstraZeneca-Impfstoff 1x
+	Auch 3x
+	auch 6x
+	auf 2x
+	aus 3x
+	ausreichende 1x
+	Ausserdem 1x
+	basierte 1x
+	bauen 1x
+	Bauplan 2x
+	Bei 8x
+	bei 8x
 	beide 1x
-	beim 1x
+	beiden 1x
 	bekommen 1x
-	berechtigt 1x
-	beschlossen 1x
-	beschlossene 1x
-	Beschlusses 1x
-	Beschlüsse 1x
-	beschränkt 1x
-	besonders 2x
-	besser 1x
-	bestehende 1x
-	betonte 1x
-	betreffe 1x
-	Betreuung 1x
-	Betreuungsmöglichkeit 1x
-	betroffene 1x
-	Bildung 1x
-	bis 4x
-	bisher 2x
+	beobachteten 1x
+	bereits 4x
+	Berichte 1x
+	Beschwerden 1x
+	bildet 2x
+	BioNTechPfizer 5x
+	BioNTechPfizernbspbei 1x
+	bisher 1x
 	bisherigen 1x
-	bislang 1x
-	bisschen 1x
-	bleibe 1x
 	bleibt 1x
-	Blick 1x
-	Brandenburg 1x
-	Britta 1x
-	Bund 2x
-	Bund-Länder-Beratungen 1x
-	Bund-Länder-Beschlüsse 1x
-	Bund-Länder-Beschlüssen 1x
-	Bund-Länder-Treffen 1x
-	Bundes 1x
-	Bundesländer 1x
-	CDU 1x
-	Chance 1x
-	Christian 1x
-	Corona-Pandemie 1x
-	Corona-Schutz-Verordnung 1x
-	CSU 1x
-	da 1x
+	Brasilien 2x
+	britischen 1x
+	Coronavirus 5x
+	Coronavirus-Erbgutes 1x
 	Dabei 1x
-	dabei 1x
-	daher 1x
-	damit 1x
-	dann 1x
-	Das 3x
-	das 3x
+	dafuer 1x
+	Damit 1x
+	damit 3x
+	Darauf 1x
+	darauf 1x
+	darueber 1x
+	Das 4x
+	das 5x
 	dass 4x
-	dem 5x
-	demnach 1x
-	Den 1x
-	den 5x
+	Datenlage 2x
+	Dazu 1x
+	dem 4x
+	den 14x
 	denen 1x
+	denn 1x
 	dennoch 1x
-	Der 2x
-	der 18x
-	Deren 1x
-	des 3x
-	desto 1x
-	deutlich 2x
-	Die 6x
-	die 19x
-	Dienstag 1x
-	Dienstagabend 1x
-	Dies 2x
-	dies 2x
+	Der 5x
+	der 25x
+	des 7x
+	deuten 1x
+	Deutschland 4x
+	Die 3x
+	die 23x
+	dies 1x
+	Diese 3x
 	diese 1x
-	Distanzunterricht 1x
-	Dresden 1x
-	Dreyer 1x
-	eben 1x
-	ebenfalls 2x
-	eher 1x
-	eigene 1x
-	eigentlich 2x
-	Ein 1x
-	ein 2x
-	Eine 1x
-	eine 4x
-	einem 1x
+	direkt 1x
+	Dort 1x
+	dort 1x
+	Dosis 1x
+	drei 2x
+	ebenfalls 1x
+	ein 4x
+	Ein-Mal-Dosis 1x
+	eine 5x
 	einen 3x
-	einer 1x
-	Einfluss 1x
-	eingeschränkt 1x
-	eingeschränkten 2x
-	einiger 1x
-	einmalig 1x
-	einschränkte 1x
-	einzelne 1x
-	Eltern 4x
-	Entscheidung 1x
-	Entscheidungen 1x
-	entschied 1x
-	entsprechenden 1x
-	Er 3x
+	einer 2x
+	eines 1x
+	eineSchutzwirkung 1x
+	einfachen 1x
+	eingeraeumt 1x
+	Einschraenkung 1x
+	Einstichstelle 1x
+	Empfehlung 2x
+	empfiehlt 1x
+	empfindlicher 1x
+	entscheidet 1x
+	entsprechende 1x
+	Entwicklung 1x
 	er 1x
-	erfolgen 1x
-	erhalten 1x
-	erklärte 1x
-	erläuterten 1x
-	Ermahnungen 1x
-	Ernst 1x
-	erste 2x
-	erweiterte 1x
-	Es 2x
-	es 6x
-	fast 1x
-	Februar 8x
-	Fernunterricht 1x
-	fest 1x
-	folgen 1x
-	Formblatt 1x
-	fortgesetzt 1x
-	Fragen 1x
-	fünften 1x
-	Für 1x
-	für 11x
-	gar 1x
-	geben 1x
-	gebeten 1x
-	gebracht 1x
-	gehen 4x
-	geht 1x
-	gehört 1x
-	genug 1x
-	geplant 1x
-	gerade 1x
-	gesamte 1x
-	geteilten 1x
-	gibt 1x
-	Grant 1x
-	Grundschulen 3x
-	Grundschüler 2x
-	Grundschülern 1x
-	grundsätzlich 2x
-	haben 3x
-	Hamburgverschärft 1x
-	hart 1x
-	hatten 1x
-	Hause 1x
-	Hendrik 1x
-	hier 2x
-	hoffe 1x
+	Erbmaterials 1x
+	Ergebnis 1x
+	Ergebnisse 1x
+	Ergebnissen 1x
+	Erkrankungen 1x
+	erreicht 1x
+	Erste 1x
+	ersten 2x
+	es 5x
+	etwas 1x
+	EU-Arzneimittelbehoerde 1x
+	Europaeische 1x
+	Europageaendert 1x
+	Exakte 1x
+	Faellen 1x
+	Fall 1x
+	flaechendeckend 1x
+	fuer 3x
+	funktioniert 1x
+	Gefrierschranktemperaturenstabil 1x
+	gegeben 1x
+	gegen 6x
+	gegenueber 1x
+	gehoeren 1x
+	geimpft 6x
+	Geimpfte 1x
+	geimpfte 1x
+	Geimpften 1x
+	gelagert 1x
+	Gelenkschmerzen 1x
+	genau 1x
+	generelle 1x
+	genetische 2x
+	geringer 1x
+	geringeren 1x
+	getestet 2x
+	gibt 2x
+	gleiche 1x
+	Grad 2x
+	groesseren 1x
+	Grossbritannien 1x
+	grosser 1x
+	Grund 1x
+	haeufigsten 1x
+	haltbar 1x
+	handelt 1x
+	hat 7x
+	hatteBioNTechbekannt 1x
+	hatten 2x
+	heisst 1x
+	hier 1x
+	hindass 1x
+	hingegen 1x
+	hoch 1x
 	hohe 1x
-	hänge 1x
-	Höhe 1x
-	ihre 4x
-	im 9x
-	immer 1x
-	In 1x
-	in 16x
-	Infektionsgeschehen 2x
-	Infektionslage 1x
-	Infektionszahlen 1x
-	Inzidenzwert 1x
-	inzwischen 1x
-	ist 2x
-	Jahrgänge 1x
-	Januar 1x
-	je 2x
-	jedoch 2x
-	Jugendlichen 1x
-	Kabinettssitzung 2x
-	Kanzlerin 1x
-	Kaum 1x
-	Kein 1x
-	keine 2x
-	Kern 1x
-	Kind 1x
-	Kinder 4x
-	Kitas 10x
-	Klasse 2x
-	Klassen 1x
-	Klassenstufen 1x
-	kleinen 1x
-	KMK 1x
+	ihre 1x
+	ihrer 1x
+	im 2x
+	Immunsystem 2x
+	Impfdosis 1x
+	impfen 1x
+	Impfkommission 2x
+	Impfstoff 11x
+	Impfstoffe 4x
+	Impfstoffen 3x
+	Impfstoffs 1x
+	Impfung 4x
+	In 3x
+	in 20x
+	Infektionen 1x
+	Information 1x
+	Inhaltsstoffe 1x
+	Israel 1x
+	ist 11x
+	Jaehrige 1x
+	Jahren 4x
+	jeden 1x
+	Johnson 18x
+	kam 1x
+	keine 1x
+	klangen 1x
+	klinischen 2x
+	Koch-Institut 1x
+	koennen 2x
+	koennte 1x
+	Koerper 1x
 	kommenden 1x
-	Konkret 1x
-	Kretschmann 1x
-	Kritikerin 1x
-	Kultusminister 2x
-	Kultusministerkonferenz 1x
-	Kurs 1x
-	können 1x
-	kündigte 1x
+	konnten 1x
+	Kopf- 1x
+	Kuehlschranktemperaturen 1x
+	Laendern 1x
+	lag 2x
+	Lagerung 1x
+	lange 3x
 	lassen 1x
+	laufen 2x
+	laut 2x
 	liegen 1x
-	Lockdowns 1x
-	Länder 6x
-	Ländern 1x
-	Ländersache 1x
-	machte 1x
-	MainzIn 1x
-	Malu 1x
+	Mal 2x
 	manche 1x
-	Manuela 1x
-	Markus 1x
-	Maßnahme 1x
-	Maßnahmen 1x
-	Mecklenburg-Vorpommern 1x
-	Mecklenburg-Vorpommerns 1x
-	Merkel 1x
-	Ministerpräsident 2x
-	Ministerpräsidenten 1x
-	Ministerpräsidentin 2x
-	Ministerpräsidentinnen 1x
+	mehrere 1x
+	mehreren 1x
+	meisten 1x
+	Menschen 6x
+	menschliche 1x
+	Minus 2x
+	Minusgraden 1x
 	mit 5x
-	möglich 1x
-	Möglichkeit 1x
-	mühsam 1x
-	München 1x
-	nach 4x
-	NDR 1x
-	neuen 1x
-	nicht 5x
-	Niedersachsen 1x
-	Niedersachsenbefreit 1x
+	mithilfe 1x
+	Moderna 6x
+	Monaten 1x
+	mRNA-Impfstoffen 2x
+	Muedigkeit 1x
+	muessen 1x
+	muss 1x
+	Mutation 1x
+	Mutationen 2x
+	mutierten 1x
+	nach 3x
+	nachgebaut 1x
+	Nachteile 1x
+	neben 1x
+	Nebenwirkungen 2x
+	neuartigen 1x
+	neue 2x
+	nicht 4x
+	niedriger 1x
 	noch 4x
-	Notbetreuung 1x
-	Notfall 1x
-	nur 6x
-	oder 2x
-	offen 1x
-	per 1x
-	Piwarz 1x
-	planen 1x
-	Pläne 1x
-	positioniert 1x
-	Präsenzpflicht 4x
-	Präsenzunterricht 6x
-	pädagogische 1x
-	rechtfertigen 1x
-	reduziert 1x
-	Regelbetreuung 1x
-	Regelbetrieb 1x
-	Regeln 2x
-	Regelung 1x
-	Regelungen 1x
-	Regierungschef 1x
-	restriktive 2x
-	restriktiven 1x
-	Rheinland-Pfalz 1x
-	Routine 1x
-	Runde 1x
-	Sachsenhält 1x
-	sagte 3x
-	schicken 1x
-	schon 1x
-	schrittweise 1x
-	schränkte 1x
-	Schulbetrieb 1x
-	Schulen 15x
-	Schulschließung 1x
-	Schwesig 2x
-	Schüler 5x
-	Schülern 1x
+	noetig 1x
+	normalen 2x
+	Notfallzulassung 1x
+	Nun 1x
+	Nur 1x
+	nur 4x
+	Ob 1x
+	ob 1x
+	Oberflaechenproteine 1x
+	ObTransport 1x
+	oder 4x
+	Personen 1x
+	Praeparat 2x
+	Praeparate 1x
+	Praeparats 1x
+	Prioritaet 1x
+	Probanden 2x
+	Prozent 6x
+	pruefen 1x
+	punktet 1x
+	reagiert 2x
+	Reaktionen 1x
+	RKI 1x
+	Robert 1x
+	schaedlich 1x
+	Schmerzen 1x
+	schnell 1x
+	Schuettelfrost 1x
+	schuetzen 1x
+	schuetzt 1x
+	Schutz 1x
+	Schutzwirkung 3x
+	Schwere 1x
+	schwere 1x
+	schweren 1x
 	sehr 1x
-	sei 4x
-	seien 1x
 	sein 1x
-	seine 1x
-	seiner 1x
-	Senat 1x
-	sich 3x
-	sie 1x
-	siebten 1x
-	sind 3x
-	Situation 1x
-	so 3x
-	soll 5x
-	solle 1x
-	sollen 2x
-	Sollten 1x
-	sollten 4x
-	Sonderwege 1x
-	sorgfältig 1x
-	SPD 3x
-	SPD-Politikerin 1x
-	später 1x
-	stark 1x
-	statt 1x
-	stattfinden 1x
-	steigen 1x
-	Stephan 1x
-	Söder 1x
-	tageweise 1x
+	sich 6x
+	Sicht 1x
+	sie 2x
+	sind 7x
+	so 1x
+	sogenannten 1x
+	soll 1x
+	sollten 1x
+	sondern 1x
+	Staendigen 1x
+	StiKo 2x
+	Studien 5x
+	Studienvorliegen 1x
+	Suedafrika 3x
+	suedafrikanischen 1x
+	Symptomen 1x
+	tatsaechlich 1x
 	Teil 1x
-	Tisch 1x
-	Tonne 2x
+	Teile 2x
+	Teils 1x
+	Todesfaelle 1x
+	Traegerviren 1x
+	Traegervirus 2x
+	transportiert 1x
 	trotz 1x
-	tue 1x
-	umsetzen 1x
-	Umsetzung 2x
-	Und 1x
-	und 18x
-	unter 1x
-	Unterricht 1x
-	unterrichtet 1x
-	unterschiedlich 1x
-	unterstrich 1x
-	Unterstützung 1x
-	vehemente 1x
-	vereinbart 1x
-	verkünden 1x
-	verlängerten 1x
-	verlängerter 1x
-	verschärft 1x
-	veränderbar 1x
-	Viele 1x
-	vom 5x
-	Von 1x
-	von 6x
-	vorgehen 1x
-	vorsichtig 1x
-	Vorsitzende 1x
-	vorzubereiten 1x
+	ueber 1x
+	uebertragen 1x
+	um 1x
+	und 15x
+	ungefaehrlich 1x
+	Unklar 1x
+	unklar 1x
+	Unternehmen 1x
+	unterschiedliche 1x
+	untersucht 1x
+	Untersuchungen 1x
+	urspruengliche 1x
+	USA 1x
+	Variante 1x
+	Varianten 1x
+	Vektorimpfstoff 1x
+	VektorimpfstoffenbspDas 1x
+	verbessert 1x
+	Vergleich 1x
+	vergleichbar 1x
+	verhindert 1x
+	verimpft 2x
+	Verlaeufe 1x
+	verpackt 1x
+	Vertraeglichkeit 1x
+	verwenden 1x
+	viele 1x
+	Vier 1x
+	vier 2x
+	Viren 2x
+	Virus 1x
+	von 21x
+	vor 2x
+	Vor- 1x
+	Vorteil 2x
+	Vorteile 1x
 	war 1x
-	warum 1x
-	Wechsel 1x
-	Wechselunterricht 3x
-	Wege 1x
-	Weil 1x
-	weil 1x
-	weiter 2x
-	Weitere 1x
-	weitere 1x
-	weiterhin 2x
-	weniger 1x
-	Wenn 1x
+	Warum 1x
+	weitertragen 1x
+	Welche 3x
+	welche 1x
+	Welcher 1x
+	wenigen 1x
+	weniger 2x
 	wenn 2x
-	Wer 1x
-	werde 1x
-	werden 9x
-	wie 1x
-	wieder 4x
-	Winfried 1x
-	wir 1x
-	wird 1x
-	Woche 1x
-	wollen 1x
-	wonach 1x
-	wurde 1x
-	Zahl 1x
+	werden 8x
+	Wie 3x
+	wie 6x
+	wieder 1x
+	wird 4x
+	Wirken 1x
+	wirksam 1x
+	Wirksamkeit 4x
+	Wirkstoffe 1x
+	wirkt 1x
+	Wirkungsweise 1x
+	wo 1x
+	Wochen 2x
+	worden 2x
+	wurde 3x
 	Zahlen 1x
+	zeigen 2x
 	zeigte 1x
-	Zeit 1x
-	zu 5x
-	zugehen 1x
-	zulasse 1x
-	zulässt 1x
-	zum 4x
-	zumindest 1x
-	zur 1x
-	zurück 1x
-	öffnen 2x
-	Öffnungsschritte 1x
+	Zelle 1x
+	Zellen 1x
+	Zu 1x
+	zu 3x
+	zudem 1x
+	zufolge 2x
+	zugelassen 1x
+	zugelassenen 2x
+	zunaechst 1x
+	zurueckgenommenNun 1x
+	Zusammenhang 1x
+	zwei 1x
+	zweiten 1x
 	Bitte wähle einer der Folgenden Optionen aus:
 	1) Einen Artikel von der Tagesschau herunterladen.
 	2) Eine Datei laden.

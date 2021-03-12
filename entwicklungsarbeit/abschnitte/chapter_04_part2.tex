@@ -1,23 +1,33 @@
 \subsection{Teilaufgabe 2}
 \subsubsection{Aufgabenstellung}
-Wir sollen ein Programm schreiben welches 2 nxn Matrizen miteinander Addieren und Multiplizieren kann.
+Es soll ein Programm erstellt werden welches zwei 2x2 Matrizen miteinander multiplizieren und addieren
+kann. Wobei die Elemente der beiden Matrizen bei der Erzeugung zufällig initialisiert werden sollen. 
 
 \subsubsection{Anforderungsdefinition}
 \begin{enumerate}
-	\item Addiere zwei nxn Matrizen.
-	\item Multipliziere zwei nxn Matrizen.
+	\item Addiere zwei 2x2 Matrizen.
+	\item Multipliziere zwei 2x2 Matrizen.
+	\item Initialisiere die Matrizen mit zufälligen zahlen.
 \end{enumerate}
 
 \subsubsection{Entwurf}
-\includegraphics[scale=0.75]{uml/uml_c4_p2.png}
+Es sollen zunächst 2 2x2 Matrizen erzeugt welche anschlie\ss end einer Methode übergeben werden,
+welche die beiden Matrizen mit zufälligen Werten initialisiert. Danach sollen beide Matrizen einmal
+ausgegeben werden. Nach der Ausgabe werden zwei Methoden aufgerufen, eine für die Multiplikation
+und eine für die Addition, diese liefern jeweils eine neue Matrix zurück mit den ausgerechneten Werten.
+Diese Matrix wird als MatrixC Temporär gespeichert und anschlie\ss end ausgegeben.
+\begin{center}
+	\includegraphics[width=0.45\textwidth]{uml/uml_c4_p2.pdf}
+\end{center}
 
 \subsubsection{Quellcode}
 \paragraph{Matrizen.java}\
-\lstinputlisting[language = Java , frame = trBL , escapeinside={(*@}{@*)}]{../chapter_04/src/chapter_04/Matrizen.java}
+\lstinputlisting[language = Java , frame = trBL , escapeinside={(*@}{@*)}]{../chapter_04/src/main/java/chapter_04/Matrizen.java}
 
 \subsubsection{Testdokumentation}
-Das Programm hat nach dem Aufruf Zwei 2x2 Matrizen erstellt und initialisiert, anschließend 
-miteinander Addiert und Multipliziert. Dabei kam das Richtige Ergebnis raus.
+Das Programm hat nach dem Aufruf Zwei 2x2 Matrizen erstellt und initialisiert, anschlie\ss end 
+miteinander Addiert und Multipliziert. Dabei wurde das Ergebnis mit einem Matrizen Rechner im Internet
+verglichen und die Ergebnisse haben übereingestimmt.
 
 \subsubsection{Benutzungshinweise}
 Navigieren Sie in der Kommandozeile zum dem Ordner, wo sich die Java Datei befindet.
