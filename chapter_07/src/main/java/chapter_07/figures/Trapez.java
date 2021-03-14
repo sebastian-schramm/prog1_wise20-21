@@ -13,10 +13,6 @@ public class Trapez extends KonvexesViereck {
      */
     public Trapez(double a, double b, double c, double winkelBeta) {
         super(a, b, c, winkelBeta, 180 - winkelBeta);
-        /*System.out.println(wAlpha);
-        System.out.println(wBeta);
-        System.out.println(wGamma);
-        System.out.println(wDelta);*/
         try {
             if (c > a)
                 throw  new Exception("Seite C muss kleiner als seine A sein");
@@ -24,6 +20,7 @@ public class Trapez extends KonvexesViereck {
                 throw new Exception("Alpha oder Beta ist größer als 90 Grad");
         } catch (Exception exception) {
             exception.printStackTrace();
+            System.exit(0);
         }
         calcH();
         calcD();

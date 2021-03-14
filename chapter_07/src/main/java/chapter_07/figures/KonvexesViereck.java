@@ -44,7 +44,7 @@ public class KonvexesViereck extends Viereck {
                 throw new Exception("Error, die Summe der Winkel ist under 360 Grad " + (wAlpha + wBeta + wGamma + wDelta));
         } catch (Exception exception) {
             exception.printStackTrace();
-            //System.exit(0);
+            System.exit(0);
         }
 
     }
